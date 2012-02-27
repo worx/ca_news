@@ -3,5 +3,49 @@
  * @file
  * Code for the CA News feature.
  */
-
 include_once('ca_news.features.inc');
+
+/**
+ * Implements hook_menu()
+ */
+function ca_news_menu() {
+/**  $items['admin/config/worx_features'] = array(
+    'title' => 'Worx Features',
+    'description' => 'Configure Worx Features',
+    'position' => 'right',
+    'weight' => -20,
+    'page callback' => 'system_admin_menu_block_page',
+    'access arguments' => array('access administration pages'),
+    'file' => 'system.admin.inc',
+    'file path' => drupal_get_path('module', 'system'),
+  );*/
+  $items['admin/config/worx_features/news'] = array(
+    'title' => 'News Configuration',
+    'description' => 'Override settings for ca_news',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('ca_news_settings_form'),
+    'access arguments' => array('worx features admin'),
+    'file' => 'ca_news.admin.inc',
+    'file path' => drupal_get_path('module', 'ca_news'),
+    'type' => MENU_NORMAL_ITEM,
+  );
+  $items['admin/config/worx_features/news/general'] = array(
+    'title' => 'General Settings',
+    'description' => 'Override settings for ca_news',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('ca_news_settings_form'),
+    'access arguments' => array('worx features admin'),
+    'file' => 'ca_news.admin.inc',
+    'file path' => drupal_get_path('module', 'ca_news'),
+    'type' => MENU_DEFAULT_LOCAL_TASK,
+  );
+  
+  return $items;
+}
+
+/**
+ * implements hook_menu_alter().
+ */
+function ca_news_menu_alter(&$items) {
+  $items['news']['title'] = variable_get('ca_news_menu_title', 'News');
+}
