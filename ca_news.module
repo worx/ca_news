@@ -9,16 +9,6 @@ include_once('ca_news.features.inc');
  * Implements hook_menu()
  */
 function ca_news_menu() {
-/**  $items['admin/config/worx_features'] = array(
-    'title' => 'Worx Features',
-    'description' => 'Configure Worx Features',
-    'position' => 'right',
-    'weight' => -20,
-    'page callback' => 'system_admin_menu_block_page',
-    'access arguments' => array('access administration pages'),
-    'file' => 'system.admin.inc',
-    'file path' => drupal_get_path('module', 'system'),
-  );*/
   $items['admin/config/worx_features/news'] = array(
     'title' => 'News Configuration',
     'description' => 'Override settings for ca_news',
@@ -54,7 +44,7 @@ function ca_news_menu_alter(&$items) {
  * Implements hook_panels_pre_render().
  */
 function ca_news_panels_pre_render($panel, $renderer) {
-  if (isset($panel->content['6']) && $panel->content['6']->subtype == 'ca_news-ca_news_list_1') {
+  if (isset($panel->content['new-7']) && $panel->content['new-7']->subtype == 'ca_news-ca_news_list_1') {
     $panel->title = variable_get('ca_news_panel_title', 'News');
   }
 }
