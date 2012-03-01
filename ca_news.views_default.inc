@@ -131,7 +131,7 @@ function ca_news_views_default_views() {
   );
 
   /* Display: CA News: List Template One */
-  $handler = $view->new_display('panel_pane', 'CA News: List Template One', 'panel_pane_1');
+  $handler = $view->new_display('panel_pane', 'CA News: List Template One', 'ca_news_list_1');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['defaults']['css_class'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
@@ -314,7 +314,7 @@ function ca_news_views_default_views() {
   $handler->display->display_options['pane_title'] = 'CA News: List Template One';
 
   /* Display: Most Recent News Template One */
-  $handler = $view->new_display('block', 'Most Recent News Template One', 'block_1');
+  $handler = $view->new_display('block', 'Most Recent News Template One', 'ca_news_block_1');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Recent News';
   $handler->display->display_options['defaults']['css_class'] = FALSE;
@@ -337,9 +337,11 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['nl2br'] = 0;
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = 0;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = 0;
+  $handler->display->display_options['fields']['title']['alter']['more_link'] = 0;
   $handler->display->display_options['fields']['title']['alter']['strip_tags'] = 0;
   $handler->display->display_options['fields']['title']['alter']['trim'] = 0;
   $handler->display->display_options['fields']['title']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['title']['element_type'] = 'h2';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_default_classes'] = 1;
   $handler->display->display_options['fields']['title']['hide_empty'] = 0;
