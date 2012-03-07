@@ -58,15 +58,5 @@ function ca_news_views_pre_view(&$view, &$display_id, &$args) {
   }
   if ($display_id == 'ca_news_block_1') {
     $view->set_items_per_page(variable_get('ca_news_block_count', 1));
-    //$view->query->pager = NULL;
-    //$view->init_pager();
-    //$view->init_display();
-    //$view->display[$display_id]->handler->set_option('pager', 'mini');
-    //Try the above in pre-build
-    //$view->display[$display_id]->handler->options['pager']['type'] = 'mini';
-    global $user;
-   // if ($user->uid == 1) {
-     // print_r($view);
-    //}
   }
 }

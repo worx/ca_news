@@ -38,18 +38,6 @@ function ca_news_settings_form() {
     '#required' => TRUE,
     '#description' => t('How many News items would you like displayed per page?'),
   );
-  //$form['ca_news_block_pager_type'] = array(
-    //'#type' => 'select',
-    //'#title' => t('Pager Type'),
-    //'#options' => array(
-      //'some' => t('Specific Number'),
-      //'mini' => t('Mini Pager'),
-      //'full' => t('Full Pager'),
-    //),
-    //'#default_value' => variable_get('ca_news_block_pager_type', array('some')),
-    //'#required' => TRUE,
-    //'#description' => t('What kind of pager would you like the block to have?'),
-  //);
   $form['ca_news_block_count'] = array(
     '#type' => 'textfield',
     '#title' => t('News items in the block'),
