@@ -1,6 +1,6 @@
-#news-images, .pane-ca-news-panel-pane-1 .views-field-field-ca-news-n-image {
+#news-images, .views-field-field-ca-news-n-image {
   float: left;
-  padding: 30px;
+  padding-right: 30px;
 }
 
 .view-ca-news .views-field-nothing {
