@@ -59,7 +59,7 @@ function ca_news_default_page_manager_handlers() {
     $pane->pid = 'new-1';
     $pane->panel = 'middle';
     $pane->type = 'views_panes';
-    $pane->subtype = 'ca_news-panel_pane_3';
+    $pane->subtype = 'ca_news-ca_news_node_1';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array();
@@ -116,7 +116,10 @@ function ca_news_default_page_manager_handlers() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'ca-addtoany-feature',
+    );
     $pane->extras = array();
     $pane->position = 2;
     $pane->locks = array();
@@ -357,7 +360,7 @@ function ca_news_default_page_manager_pages() {
     $pane->pid = 'new-1';
     $pane->panel = 'middle';
     $pane->type = 'views_panes';
-    $pane->subtype = 'ca_news-panel_pane_2';
+    $pane->subtype = 'ca_news-ca_news_admin';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array();

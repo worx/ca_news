@@ -1,7 +1,14 @@
-#news-images, .views-field-field-ca-news-n-image {
+.views-field-field-ca-news-n-image {
   float: left;
+  padding-bottom: 5px;
   padding-right: 30px;
 }
+
+.view-display-id-ca_news_block_1 .views-field-field-ca-news-n-image {
+  padding-right: 15px;
+}
+
+#news-images {float: left;}
 
 .view-ca-news .views-field-nothing {
   clear: both;
