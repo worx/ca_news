@@ -60,3 +60,13 @@ function ca_news_views_pre_view(&$view, &$display_id, &$args) {
     $view->set_items_per_page(variable_get('ca_news_block_count', 1));
   }
 }
+
+/**
+ * Implementation of hook_ctools_plugin_directory()
+ */
+function ca_news_ctools_plugin_directory($owner, $plugin_type) {
+  if ($owner == 'ctools') {
+    return 'plugins/' . $plugin_type;
+  }
+}
+
