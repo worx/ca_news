@@ -33,14 +33,14 @@ function ca_news_settings_form() {
   );
   $form['ca_news_list_count'] = array(
     '#type' => 'textfield',
-    '#title' => t('Newss per page'),
+    '#title' => t('News per page'),
     '#default_value' => variable_get('ca_news_list_count', 5),
     '#required' => TRUE,
     '#description' => t('How many newss would you like displayed per page?'),
   );
   $form['ca_news_block_count'] = array(
     '#type' => 'textfield',
-    '#title' => t('Newss in the block'),
+    '#title' => t('News in the block'),
     '#default_value' => variable_get('ca_news_block_count', 1),
     '#required' => TRUE,
     '#description' => t('How many newss would you like displayed in the block?'),
@@ -52,9 +52,21 @@ function ca_news_settings_form() {
       'ca_news_list_template_one' => t('Template one'),
       'ca_news_list_template_two' => t('Template two'),
       'ca_news_list_template_three' => t('Template three'),
+      'ca_news_list_template_four' => t('Template four'),
+      'ca_news_list_template_five' => t('Template five'),
     ),
     '#required' => TRUE,
     '#default_value' => variable_get('ca_news_list_template', 'ca_news_list_template_one'),
+  );
+  $form['ca_news_node_template'] = array(
+    '#type' => 'select',
+    '#title' => t('News\'s node template'),
+    '#options' => array(
+      'ca_news_node_template_one' => t('Template one'),
+      'ca_news_node_template_two' => t('Template two'),
+    ),
+    '#required' => TRUE,
+    '#default_value' => variable_get('ca_news_node_template', 'ca_news_node_template_one'),
   );
   $form['actions'] = array(
     '#type' => 'actions',

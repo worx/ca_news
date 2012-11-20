@@ -1,26 +1,20 @@
-.views-field-field-ca-news-n-image {
-  float: left;
-  padding-bottom: 5px;
-  padding-right: 10px;
-}
-
-.view-display-id-ca_news_block_1 .views-field-field-ca-news-n-image {
-  padding-right: 10px;
-}
-
-#news-images { 
-  float: left;
-}
-
-.view-ca-news .views-field-nothing {
-  clear: both;
-}
-
-#news-images .views-field-field-ca-news-n-image-1 {
-  width: 200px;
-}
-
-#news-images .views-field-field-ca-news-n-image-1 img {
-  padding-right: 5px;
-  padding-bottom: 5px;
-}
+/* Node CSS */
+.view-id-ca_news_nodes .views-field-field-ca-news-n-image-1 { clear: left; }
+.view-id-ca_news_nodes .views-field-field-ca-news-n-image-1 img { padding-right: 5px; padding-bottom: 5px; }
+.view-display-id-ca_news_node_1 { float: left; }
+.view-display-id-ca_news_node_1 .views-field-field-ca-news-n-image-1 { width: 200px; }
+.view-display-id-ca_news_node_template_two .views-field-field-ca-news-n-image { float: none; padding-bottom: 5px; padding-right: 10px; }
+.view-display-id-ca_news_node_template_two { text-align: center; }
+.view-display-id-ca_news_node_template_two .views-field-field-ca-news-n-image, .view-display-id-ca_news_node_template_two .views-field-field-ca-news-n-image-1 { display: inline-block; }
+/* Blocks CSS */
+.view-display-id-ca_news_block_1 .views-field-field-ca-news-n-image, .view-display-id-ca_news_block_4 .views-field-field-ca-news-n-image { float: left; padding-right: 10px; }
+.view-ca-news-blocks td { vertical-align: top; }
+.view-display-id-ca_news_block_3 .views-field-field-ca-news-n-image, .view-display-id-ca_news_block_3 .views-field-title { text-align: center; } 
+.view-display-id-ca_news_block_3 .views-field-body { text-align: justify; }
+.view-ca-news-blocks .views-field-view-node { clear: left; text-align: right; padding-right: 10px; }
+/* Lists CSS */
+.view-ca-news-lists .views-field-field-ca-news-n-image { float: left; padding-bottom: 5px; padding-right: 10px; }
+.view-ca-news-lists .views-field-view-node { clear: left; text-align: right; padding-right: 10px; }
+.view-ca-news-lists .views-field-nothing { clear: both; }
+.view-id-ca_news_lists td { vertical-align: top; }
+.view-display-id-ca_news_list_4 .col-1, .view-display-id-ca_news_list_4 .col-2 { width: 50%; }

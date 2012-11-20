@@ -29,6 +29,8 @@ function ca_news_list_template_access_settings($form, &$form_state, $conf) {
       'ca_news_list_template_one' => t('Template one'),
       'ca_news_list_template_two' => t('Template two'),
       'ca_news_list_template_three' => t('Template three'),
+      'ca_news_list_template_four' => t('Template four'),
+      'ca_news_list_template_five' => t('Template five'),
     ),
     '#required' => TRUE,
     '#default_value' => $conf['ca_news_list_template'],
@@ -60,8 +62,14 @@ function ca_news_list_template_access_summary($conf, $context) {
   elseif ($conf['ca_news_list_template'] == 'ca_news_list_template_two') {
     $template = t('Template two');
   }
-  else {
+  elseif ($conf['ca_news_list_template'] == 'ca_news_list_template_three') {
     $template = t('Template three');
+  }
+  elseif ($conf['ca_news_list_template'] == 'ca_news_list_template_four') {
+    $template = t('Template four');
+  }
+  else {
+    $template = t('Template five');
   }
 
   return t('Display template is set to: ' . $template);
