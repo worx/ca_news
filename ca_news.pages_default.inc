@@ -422,7 +422,7 @@ function ca_news_default_page_manager_handlers() {
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
-  $export['node_view_panel_context'] = $handler;
+  $export['ca_news_node_view_panel_context_2'] = $handler;
 
   return $export;
 }
