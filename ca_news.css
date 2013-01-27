@@ -1,7 +1,7 @@
 /* Node CSS */
 .view-id-ca_news_nodes .views-field-field-ca-news-n-image-1 { clear: left; }
 .view-id-ca_news_nodes .views-field-field-ca-news-n-image-1 img { padding-right: 5px; padding-bottom: 5px; }
-.view-display-id-ca_news_node_1 { float: left; }
+.view-display-id-ca_news_node_1 { float: left; padding-right: 10px; }
 .view-display-id-ca_news_node_1 .views-field-field-ca-news-n-image-1 { width: 200px; }
 .view-display-id-ca_news_node_template_two .views-field-field-ca-news-n-image { float: none; padding-bottom: 5px; padding-right: 10px; }
 .view-display-id-ca_news_node_template_two { text-align: center; }

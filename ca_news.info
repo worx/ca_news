@@ -60,3 +60,4 @@ features[views_view][] = ca_news_admin
 features[views_view][] = ca_news_blocks
 features[views_view][] = ca_news_lists
 features[views_view][] = ca_news_nodes
+stylesheets[all][] = "ca_news.css"
