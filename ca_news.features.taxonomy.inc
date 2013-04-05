@@ -11,7 +11,7 @@ function ca_news_taxonomy_default_vocabularies() {
   return array(
     'categories' => array(
       'name' => 'Categories',
-      'machine_name' => 'categories',
+      'machine_name' => 'ca_news_categories',
       'description' => '',
       'hierarchy' => '0',
       'module' => 'taxonomy',
