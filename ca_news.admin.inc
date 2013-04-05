@@ -36,14 +36,25 @@ function ca_news_settings_form() {
     '#title' => t('News per page'),
     '#default_value' => variable_get('ca_news_list_count', 5),
     '#required' => TRUE,
-    '#description' => t('How many newss would you like displayed per page?'),
+    '#description' => t('How many news would you like displayed per page?'),
   );
   $form['ca_news_block_count'] = array(
     '#type' => 'textfield',
     '#title' => t('News in the block'),
     '#default_value' => variable_get('ca_news_block_count', 1),
     '#required' => TRUE,
-    '#description' => t('How many newss would you like displayed in the block?'),
+    '#description' => t('How many news would you like displayed in the block?'),
+  );
+  $form['ca_news_term_display'] = array(
+    '#type' => 'select',
+    '#title' => t('New\'s term displays'),
+    '#options' => array(
+      'ca_news_term_display_false' => t('Do Not Display'),
+      'ca_news_term_display_node' => t('Display on the Node only'),
+      'ca_news_term_display_all' => t('Display Everywhere'),
+    ),
+    '#required' => TRUE,
+    '#default_value' => variable_get('ca_news_term_display', 'ca_news_term_display_false'),
   );
   $form['ca_news_list_template'] = array(
     '#type' => 'select',
@@ -67,6 +78,19 @@ function ca_news_settings_form() {
     ),
     '#required' => TRUE,
     '#default_value' => variable_get('ca_news_node_template', 'ca_news_node_template_one'),
+  );
+  $form['ca_news_term_template'] = array(
+    '#type' => 'select',
+    '#title' => t('New\'s term template'),
+    '#options' => array(
+      'ca_news_term_template_one' => t('Template one'),
+      'ca_news_term_template_two' => t('Template two'),
+      'ca_news_term_template_three' => t('Template three'),
+      'ca_news_term_template_four' => t('Template two'),
+      'ca_news_term_template_five' => t('Template three'),
+    ),
+    '#required' => TRUE,
+    '#default_value' => variable_get('ca_news_term_template', 'ca_news_term_template_one'),
   );
   $form['actions'] = array(
     '#type' => 'actions',

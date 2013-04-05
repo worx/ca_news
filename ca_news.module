@@ -5,6 +5,12 @@
  */
 include_once('ca_news.features.inc');
 
+if (variable_get('ca_news_term_display') == 'ca_news_term_display_false') {
+  drupal_add_css(drupal_get_path('module', 'ca_news') . '/ca_news_no_taxonomy.css');
+} else if (variable_get('ca_news_term_display') == 'ca_news_term_display_node') {
+  drupal_add_css(drupal_get_path('module', 'ca_news') . '/ca_news_node_taxonomy.css');
+}
+
 /**
  * Implements hook_menu()
  */
