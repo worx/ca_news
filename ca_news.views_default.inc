@@ -663,7 +663,7 @@ function ca_news_views_default_views() {
     13007701 => 0,
   );
   $handler->display->display_options['filters']['tid']['type'] = 'select';
-  $handler->display->display_options['filters']['tid']['vocabulary'] = 'categories';
+  $handler->display->display_options['filters']['tid']['vocabulary'] = 'ca_news_categories';
 
   /* Display: CA News: List Template One */
   $handler = $view->new_display('panel_pane', 'CA News: List Template One', 'ca_news_list_1');
@@ -1681,7 +1681,7 @@ function ca_news_views_default_views() {
     13007701 => 0,
   );
   $handler->display->display_options['filters']['tid']['type'] = 'select';
-  $handler->display->display_options['filters']['tid']['vocabulary'] = 'categories';
+  $handler->display->display_options['filters']['tid']['vocabulary'] = 'ca_news_categories';
 
   /* Display: CA News: Term List Template One */
   $handler = $view->new_display('panel_pane', 'CA News: Term List Template One', 'ca_news_term_list_1');

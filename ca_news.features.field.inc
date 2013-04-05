@@ -111,7 +111,7 @@ function ca_news_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'categories',
+            'vocabulary' => 'ca_news_categories',
             'parent' => '0',
           ),
         ),
