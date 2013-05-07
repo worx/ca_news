@@ -10,7 +10,7 @@
  * by the system that includes this file.
  */
 $plugin = array(
-  'title' => t('News: term display'),m
+  'title' => t('News: term display'),
   'description' => t('Control access by event term type.'),
   'callback' => 'ca_news_term_display_access_check',
   'settings form' => 'ca_news_term_display_access_settings',

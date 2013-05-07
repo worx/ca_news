@@ -307,7 +307,7 @@ function ca_news_default_page_manager_handlers() {
       'logic' => 'and',
     ),
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => 'ca-event-node-template-2',
+    'body_classes_to_add' => 'ca-news-node-template-2',
   );
   $display = new panels_display();
   $display->layout = 'flexible';
@@ -611,6 +611,13 @@ function ca_news_default_page_manager_handlers() {
           'context' => 'argument_term_1',
           'not' => FALSE,
         ),
+        1 => array(
+          'name' => 'ca_news_term_template',
+          'settings' => array(
+            'ca_news_term_template' => 'ca_news_term_template_one',
+          ),
+          'not' => FALSE,
+        ),
       ),
       'logic' => 'and',
     ),
@@ -681,6 +688,13 @@ function ca_news_default_page_manager_handlers() {
           'context' => 'argument_term_1',
           'not' => FALSE,
         ),
+        1 => array(
+          'name' => 'ca_news_term_template',
+          'settings' => array(
+            'ca_news_term_template' => 'ca_news_term_template_two',
+          ),
+          'not' => FALSE,
+        ),
       ),
       'logic' => 'and',
     ),
@@ -749,6 +763,13 @@ function ca_news_default_page_manager_handlers() {
             ),
           ),
           'context' => 'argument_term_1',
+          'not' => FALSE,
+        ),
+        1 => array(
+          'name' => 'ca_news_term_template',
+          'settings' => array(
+            'ca_news_term_template' => 'ca_news_term_template_three',
+          ),
           'not' => FALSE,
         ),
       ),
@@ -837,6 +858,13 @@ function ca_news_default_page_manager_handlers() {
             ),
           ),
           'context' => 'argument_term_1',
+          'not' => FALSE,
+        ),
+        1 => array(
+          'name' => 'ca_news_term_template',
+          'settings' => array(
+            'ca_news_term_template' => 'ca_news_term_template_four',
+          ),
           'not' => FALSE,
         ),
       ),

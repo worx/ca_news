@@ -586,6 +586,7 @@ function ca_news_views_default_views() {
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['link_display'] = 'feed_1';
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
@@ -734,7 +735,7 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['pane_title'] = 'CA News: List Template One';
-  $handler->display->display_options['pane_category']['name'] = 'CA News';
+  $handler->display->display_options['pane_category']['name'] = 'CA List';
   $handler->display->display_options['pane_category']['weight'] = '0';
   $handler->display->display_options['inherit_panels_path'] = '1';
 
@@ -820,7 +821,7 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['pane_title'] = 'CA News: List Template Two';
-  $handler->display->display_options['pane_category']['name'] = 'CA News';
+  $handler->display->display_options['pane_category']['name'] = 'CA List';
   $handler->display->display_options['pane_category']['weight'] = '0';
   $handler->display->display_options['link_to_view'] = '1';
 
@@ -900,7 +901,7 @@ function ca_news_views_default_views() {
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
   $handler->display->display_options['pane_title'] = 'CA News: List Template Three Main';
-  $handler->display->display_options['pane_category']['name'] = 'CA News';
+  $handler->display->display_options['pane_category']['name'] = 'CA List';
   $handler->display->display_options['pane_category']['weight'] = '0';
   $handler->display->display_options['inherit_panels_path'] = '1';
 
@@ -996,7 +997,7 @@ function ca_news_views_default_views() {
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
   $handler->display->display_options['pane_title'] = 'CA News: List Template Three Sub';
-  $handler->display->display_options['pane_category']['name'] = 'CA News';
+  $handler->display->display_options['pane_category']['name'] = 'CA List';
   $handler->display->display_options['pane_category']['weight'] = '0';
   $handler->display->display_options['inherit_panels_path'] = '1';
 
@@ -1082,7 +1083,7 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['pane_title'] = 'CA News: List Template Four';
-  $handler->display->display_options['pane_category']['name'] = 'CA News';
+  $handler->display->display_options['pane_category']['name'] = 'CA List';
   $handler->display->display_options['pane_category']['weight'] = '0';
   $handler->display->display_options['inherit_panels_path'] = '1';
 
@@ -1162,7 +1163,7 @@ function ca_news_views_default_views() {
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
   $handler->display->display_options['pane_title'] = 'CA News: List Template Five Main';
-  $handler->display->display_options['pane_category']['name'] = 'CA News';
+  $handler->display->display_options['pane_category']['name'] = 'CA List';
   $handler->display->display_options['pane_category']['weight'] = '0';
   $handler->display->display_options['inherit_panels_path'] = '1';
 
@@ -1258,7 +1259,7 @@ function ca_news_views_default_views() {
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
   $handler->display->display_options['pane_title'] = 'CA News: List Template Five Sub';
-  $handler->display->display_options['pane_category']['name'] = 'CA News';
+  $handler->display->display_options['pane_category']['name'] = 'CA List';
   $handler->display->display_options['pane_category']['weight'] = '0';
 
   /* Display: Feed */
@@ -1267,15 +1268,21 @@ function ca_news_views_default_views() {
   $handler->display->display_options['title'] = 'News RSS Feed';
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '25';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'rss';
   $handler->display->display_options['row_plugin'] = 'node_rss';
+  $handler->display->display_options['row_options']['item_length'] = 'rss';
   $handler->display->display_options['path'] = 'news/rss-feed';
   $handler->display->display_options['displays'] = array(
     'ca_news_list_1' => 'ca_news_list_1',
+    'ca_news_list_2' => 'ca_news_list_2',
+    'ca_news_list_3_main' => 'ca_news_list_3_main',
+    'ca_news_list_3_sub' => 'ca_news_list_3_sub',
+    'ca_news_list_4' => 'ca_news_list_4',
+    'ca_news_list_5_main' => 'ca_news_list_5_main',
+    'ca_news_list_5_sub' => 'ca_news_list_5_sub',
     'default' => 0,
-    'block_1' => 0,
-    'ca_news_admin' => 0,
-    'ca_news_node_1' => 0,
   );
   $handler->display->display_options['sitename_title'] = 0;
   $export['ca_news_lists'] = $view;
@@ -1407,7 +1414,7 @@ function ca_news_views_default_views() {
   $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
   $handler->display->display_options['pane_title'] = 'CA News: Node Template One A';
-  $handler->display->display_options['pane_category']['name'] = 'CA News';
+  $handler->display->display_options['pane_category']['name'] = 'CA Node';
   $handler->display->display_options['pane_category']['weight'] = '0';
   $handler->display->display_options['argument_input'] = array(
     'nid' => array(
@@ -1468,7 +1475,7 @@ function ca_news_views_default_views() {
   $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
   $handler->display->display_options['pane_title'] = 'CA News: Node Template One B';
-  $handler->display->display_options['pane_category']['name'] = 'CA News';
+  $handler->display->display_options['pane_category']['name'] = 'CA Node';
   $handler->display->display_options['pane_category']['weight'] = '0';
   $handler->display->display_options['argument_input'] = array(
     'nid' => array(
@@ -1516,7 +1523,7 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['field_ca_news_n_image']['delta_limit'] = '1';
   $handler->display->display_options['fields']['field_ca_news_n_image']['delta_offset'] = '0';
   $handler->display->display_options['pane_title'] = 'CA News: Node Template Two A';
-  $handler->display->display_options['pane_category']['name'] = 'CA News';
+  $handler->display->display_options['pane_category']['name'] = 'CA Node';
   $handler->display->display_options['pane_category']['weight'] = '0';
   $handler->display->display_options['argument_input'] = array(
     'nid' => array(
@@ -1568,7 +1575,7 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['field_ca_news_n_image']['delta_limit'] = '1';
   $handler->display->display_options['fields']['field_ca_news_n_image']['delta_offset'] = '0';
   $handler->display->display_options['pane_title'] = 'CA News: Node Template Two B';
-  $handler->display->display_options['pane_category']['name'] = 'CA News';
+  $handler->display->display_options['pane_category']['name'] = 'CA Node';
   $handler->display->display_options['pane_category']['weight'] = '0';
   $handler->display->display_options['argument_input'] = array(
     'nid' => array(
@@ -1663,25 +1670,6 @@ function ca_news_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'ca_news' => 'ca_news',
   );
-  /* Filter criterion: Content: Has taxonomy term */
-  $handler->display->display_options['filters']['tid']['id'] = 'tid';
-  $handler->display->display_options['filters']['tid']['table'] = 'taxonomy_index';
-  $handler->display->display_options['filters']['tid']['field'] = 'tid';
-  $handler->display->display_options['filters']['tid']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['tid']['expose']['operator_id'] = 'tid_op';
-  $handler->display->display_options['filters']['tid']['expose']['label'] = 'Category';
-  $handler->display->display_options['filters']['tid']['expose']['operator'] = 'tid_op';
-  $handler->display->display_options['filters']['tid']['expose']['identifier'] = 'tid';
-  $handler->display->display_options['filters']['tid']['expose']['remember_roles'] = array(
-    2 => '2',
-    1 => 0,
-    3 => 0,
-    4 => 0,
-    227698236 => 0,
-    13007701 => 0,
-  );
-  $handler->display->display_options['filters']['tid']['type'] = 'select';
-  $handler->display->display_options['filters']['tid']['vocabulary'] = 'ca_news_categories';
 
   /* Display: CA News: Term List Template One */
   $handler = $view->new_display('panel_pane', 'CA News: Term List Template One', 'ca_news_term_list_1');
@@ -1752,7 +1740,7 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['pane_title'] = 'CA News: Term List Template One';
-  $handler->display->display_options['pane_category']['name'] = 'CA News';
+  $handler->display->display_options['pane_category']['name'] = 'CA List';
   $handler->display->display_options['pane_category']['weight'] = '0';
   $handler->display->display_options['inherit_panels_path'] = '1';
 
@@ -1838,9 +1826,10 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['pane_title'] = 'CA News: Term List Template Two';
-  $handler->display->display_options['pane_category']['name'] = 'CA News';
+  $handler->display->display_options['pane_category']['name'] = 'CA List';
   $handler->display->display_options['pane_category']['weight'] = '0';
-  $handler->display->display_options['link_to_view'] = '1';
+  $handler->display->display_options['link_to_view'] = '0';
+  $handler->display->display_options['inherit_panels_path'] = '1';
 
   /* Display: CA News: Term List Template Three Main */
   $handler = $view->new_display('panel_pane', 'CA News: Term List Template Three Main', 'ca_news_term_list_3_main');
@@ -1918,7 +1907,7 @@ function ca_news_views_default_views() {
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
   $handler->display->display_options['pane_title'] = 'CA News: Term List Template Three Main';
-  $handler->display->display_options['pane_category']['name'] = 'CA News';
+  $handler->display->display_options['pane_category']['name'] = 'CA List';
   $handler->display->display_options['pane_category']['weight'] = '0';
   $handler->display->display_options['inherit_panels_path'] = '1';
 
@@ -2014,7 +2003,7 @@ function ca_news_views_default_views() {
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
   $handler->display->display_options['pane_title'] = 'CA News: Term List Template Three Sub';
-  $handler->display->display_options['pane_category']['name'] = 'CA News';
+  $handler->display->display_options['pane_category']['name'] = 'CA List';
   $handler->display->display_options['pane_category']['weight'] = '0';
   $handler->display->display_options['inherit_panels_path'] = '1';
 
@@ -2100,7 +2089,7 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['pane_title'] = 'CA News: Term List Template Four';
-  $handler->display->display_options['pane_category']['name'] = 'CA News';
+  $handler->display->display_options['pane_category']['name'] = 'CA List';
   $handler->display->display_options['pane_category']['weight'] = '0';
   $handler->display->display_options['inherit_panels_path'] = '1';
 
@@ -2180,7 +2169,7 @@ function ca_news_views_default_views() {
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
   $handler->display->display_options['pane_title'] = 'CA News: Term List Template Five Main';
-  $handler->display->display_options['pane_category']['name'] = 'CA News';
+  $handler->display->display_options['pane_category']['name'] = 'CA List';
   $handler->display->display_options['pane_category']['weight'] = '0';
   $handler->display->display_options['inherit_panels_path'] = '1';
 
@@ -2276,8 +2265,28 @@ function ca_news_views_default_views() {
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
   $handler->display->display_options['pane_title'] = 'CA News: Term List Template Five Sub';
-  $handler->display->display_options['pane_category']['name'] = 'CA News';
+  $handler->display->display_options['pane_category']['name'] = 'CA List';
   $handler->display->display_options['pane_category']['weight'] = '0';
+
+  /* Display: Feed */
+  $handler = $view->new_display('feed', 'Feed', 'feed_1');
+  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '25';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['style_plugin'] = 'rss';
+  $handler->display->display_options['row_plugin'] = 'node_rss';
+  $handler->display->display_options['path'] = 'categories/%/feed';
+  $handler->display->display_options['displays'] = array(
+    'ca_news_term_list_1' => 'ca_news_term_list_1',
+    'ca_news_term_list_2' => 'ca_news_term_list_2',
+    'ca_news_term_list_3_main' => 'ca_news_term_list_3_main',
+    'ca_news_term_list_3_sub' => 'ca_news_term_list_3_sub',
+    'ca_news_term_list_4' => 'ca_news_term_list_4',
+    'ca_news_term_list_5_main' => 'ca_news_term_list_5_main',
+    'ca_news_list_5_sub' => 'ca_news_list_5_sub',
+    'default' => 0,
+  );
   $export['ca_news_term'] = $view;
 
   return $export;
