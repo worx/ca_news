@@ -14,9 +14,9 @@ function ca_news_user_default_permissions() {
   $permissions['create ca_news content'] = array(
     'name' => 'create ca_news content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'news admin',
-      2 => 'webmaster',
+      'administrator => 'administrator',
+      'news admin' => 'news admin',
+      'webmaster' => 'webmaster',,
     ),
     'module' => 'node',
   );
@@ -25,9 +25,9 @@ function ca_news_user_default_permissions() {
   $permissions['delete any ca_news content'] = array(
     'name' => 'delete any ca_news content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'news admin',
-      2 => 'webmaster',
+      'administrator => 'administrator',
+      'news admin' => 'news admin',
+      'webmaster' => 'webmaster',,
     ),
     'module' => 'node',
   );
@@ -36,9 +36,9 @@ function ca_news_user_default_permissions() {
   $permissions['delete own ca_news content'] = array(
     'name' => 'delete own ca_news content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'news admin',
-      2 => 'webmaster',
+      'administrator => 'administrator',
+      'news admin' => 'news admin',
+      'webmaster' => 'webmaster',,
     ),
     'module' => 'node',
   );
@@ -47,9 +47,9 @@ function ca_news_user_default_permissions() {
   $permissions['edit any ca_news content'] = array(
     'name' => 'edit any ca_news content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'news admin',
-      2 => 'webmaster',
+      'administrator => 'administrator',
+      'news admin' => 'news admin',
+      'webmaster' => 'webmaster',,
     ),
     'module' => 'node',
   );
@@ -58,9 +58,9 @@ function ca_news_user_default_permissions() {
   $permissions['edit own ca_news content'] = array(
     'name' => 'edit own ca_news content',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'news admin',
-      2 => 'webmaster',
+      'administrator => 'administrator',
+      'news admin' => 'news admin',
+      'webmaster' => 'webmaster',,
     ),
     'module' => 'node',
   );
