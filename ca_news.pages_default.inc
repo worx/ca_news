@@ -584,7 +584,7 @@ function ca_news_default_page_manager_handlers() {
   $handler = new stdClass();
   $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
   $handler->api_version = 1;
-  $handler->name = 'ca_directory_term_view_panel_context';
+  $handler->name = 'ca_news_term_view_panel_context';
   $handler->task = 'term_view';
   $handler->subtask = '';
   $handler->handler = 'panel_context';
@@ -656,12 +656,12 @@ function ca_news_default_page_manager_handlers() {
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = 'new-17';
   $handler->conf['display'] = $display;
-  $export['ca_directory_term_view_panel_context'] = $handler;
+  $export['ca_news_term_view_panel_context'] = $handler;
 
   $handler = new stdClass();
   $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
   $handler->api_version = 1;
-  $handler->name = 'ca_directory_term_view_panel_context_2';
+  $handler->name = 'ca_news_term_view_panel_context_2';
   $handler->task = 'term_view';
   $handler->subtask = '';
   $handler->handler = 'panel_context';
@@ -733,12 +733,12 @@ function ca_news_default_page_manager_handlers() {
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
-  $export['ca_directory_term_view_panel_context_2'] = $handler;
+  $export['ca_news_term_view_panel_context_2'] = $handler;
 
   $handler = new stdClass();
   $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
   $handler->api_version = 1;
-  $handler->name = 'ca_directory_term_view_panel_context_3';
+  $handler->name = 'ca_news_term_view_panel_context_3';
   $handler->task = 'term_view';
   $handler->subtask = '';
   $handler->handler = 'panel_context';
@@ -828,12 +828,12 @@ function ca_news_default_page_manager_handlers() {
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
-  $export['ca_directory_term_view_panel_context_3'] = $handler;
+  $export['ca_news_term_view_panel_context_3'] = $handler;
 
   $handler = new stdClass();
   $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
   $handler->api_version = 1;
-  $handler->name = 'ca_directory_term_view_panel_context_4';
+  $handler->name = 'ca_news_term_view_panel_context_4';
   $handler->task = 'term_view';
   $handler->subtask = '';
   $handler->handler = 'panel_context';
@@ -905,12 +905,12 @@ function ca_news_default_page_manager_handlers() {
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
-  $export['ca_directory_term_view_panel_context_4'] = $handler;
+  $export['ca_news_term_view_panel_context_4'] = $handler;
 
   $handler = new stdClass();
   $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
   $handler->api_version = 1;
-  $handler->name = 'ca_directory_term_view_panel_context_5';
+  $handler->name = 'ca_news_term_view_panel_context_5';
   $handler->task = 'term_view';
   $handler->subtask = '';
   $handler->handler = 'panel_context';
@@ -995,7 +995,7 @@ function ca_news_default_page_manager_handlers() {
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
-  $export['ca_directory_term_view_panel_context_5'] = $handler;
+  $export['ca_news_term_view_panel_context_5'] = $handler;
 
   return $export;
 }
