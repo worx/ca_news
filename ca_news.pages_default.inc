@@ -1239,7 +1239,7 @@ function ca_news_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = 'News';
+  $display->title = '';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
@@ -1305,7 +1305,7 @@ function ca_news_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = 'News';
+  $display->title = '';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
@@ -1371,7 +1371,7 @@ function ca_news_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = 'News';
+  $display->title = '';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
@@ -1455,7 +1455,7 @@ function ca_news_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = 'News';
+  $display->title = '';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
@@ -1523,7 +1523,7 @@ function ca_news_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = 'News';
+  $display->title = '';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();

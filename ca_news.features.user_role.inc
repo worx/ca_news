@@ -13,7 +13,7 @@ function ca_news_user_default_roles() {
   // Exported role: news admin.
   $roles['news admin'] = array(
     'name' => 'news admin',
-    'weight' => '4',
+    'weight' => 4,
     'machine_name' => 'news_admin',
   );
 

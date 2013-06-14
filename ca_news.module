@@ -50,8 +50,18 @@ function ca_news_menu_alter(&$items) {
  * Implements hook_panels_pre_render().
  */
 function ca_news_panels_pre_render($panel, $renderer) {
-  if (isset($panel->content['new-7']) && $panel->content['new-7']->subtype == 'ca_news-ca_news_list_1') {
-    $panel->title = variable_get('ca_news_panel_title', 'News');
+  foreach ($panel->content as $key => $value) {
+    if ($value->subtype == 'ca_news-ca_news_list_1') {
+      $panel->title = variable_get('ca_news_panel_title', 'News');
+    } elseif ($value->subtype == 'ca_news-ca_news_list_2') {
+      $panel->title = variable_get('ca_news_panel_title', 'News');
+    } elseif ($value->subtype == 'ca_news-ca_news_list_3') {
+      $panel->title = variable_get('ca_news_panel_title', 'News');
+    } elseif ($value->subtype == 'ca_news-ca_news_list_4') {
+      $panel->title = variable_get('ca_news_panel_title', 'News');
+    } elseif ($value->subtype == 'ca_news-ca_news_list_5') {
+      $panel->title = variable_get('ca_news_panel_title', 'News');
+    }
   }
 }
 
