@@ -49,7 +49,7 @@ function ca_news_default_page_manager_handlers() {
       'logic' => 'and',
     ),
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => 'ca-news-node-template-1',
+    'body_classes_to_add' => 'ca-news-node ca-news-node-template-1',
   );
   $display = new panels_display();
   $display->layout = 'onecol';
@@ -307,7 +307,7 @@ function ca_news_default_page_manager_handlers() {
       'logic' => 'and',
     ),
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => 'ca-news-node-template-2',
+    'body_classes_to_add' => 'ca-news-node ca-news-node-template-2',
   );
   $display = new panels_display();
   $display->layout = 'flexible';
@@ -594,7 +594,7 @@ function ca_news_default_page_manager_handlers() {
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => 'ca-event-term-template-1',
+    'body_classes_to_add' => 'ca-news-list-term ca-news-list-term-template-1',
     'css_id' => '',
     'css' => '',
     'contexts' => array(),
@@ -671,7 +671,7 @@ function ca_news_default_page_manager_handlers() {
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => 'ca-event-term-template-2',
+    'body_classes_to_add' => 'ca-news-list-term ca-news-list-term-template-2',
     'css_id' => '',
     'css' => '',
     'contexts' => array(),
@@ -748,7 +748,7 @@ function ca_news_default_page_manager_handlers() {
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => 'ca-event-term-template-2',
+    'body_classes_to_add' => 'ca-news-list-term ca-news-list-term-template-3',
     'css_id' => '',
     'css' => '',
     'contexts' => array(),
@@ -843,7 +843,7 @@ function ca_news_default_page_manager_handlers() {
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => 'ca-event-term-template-4',
+    'body_classes_to_add' => 'ca-news-list-term ca-news-list-term-template-4',
     'css_id' => '',
     'css' => '',
     'contexts' => array(),
@@ -920,7 +920,7 @@ function ca_news_default_page_manager_handlers() {
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => 'ca-event-term-template-5',
+    'body_classes_to_add' => 'ca-news-list-term ca-news-list-term-template-5',
     'css_id' => '',
     'css' => '',
     'contexts' => array(),
@@ -1131,6 +1131,8 @@ function ca_news_default_page_manager_pages() {
     'css' => '',
     'contexts' => array(),
     'relationships' => array(),
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => 'ca-admin ca-news-admin',
   );
   $display = new panels_display();
   $display->layout = 'onecol';
@@ -1227,7 +1229,7 @@ function ca_news_default_page_manager_pages() {
       'logic' => 'and',
     ),
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => 'ca-news-list-template-1',
+    'body_classes_to_add' => 'ca-news-list ca-news-list-template-1',
   );
   $display = new panels_display();
   $display->layout = 'onecol';
@@ -1277,7 +1279,7 @@ function ca_news_default_page_manager_pages() {
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => 'ca-news-list-template-2',
+    'body_classes_to_add' => 'ca-news-list ca-news-list-template-2',
     'css_id' => '',
     'css' => '',
     'contexts' => array(),
@@ -1343,7 +1345,7 @@ function ca_news_default_page_manager_pages() {
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => 'ca-news-list-template-3',
+    'body_classes_to_add' => 'ca-news-list ca-news-list-template-3',
     'css_id' => '',
     'css' => '',
     'contexts' => array(),
@@ -1427,7 +1429,7 @@ function ca_news_default_page_manager_pages() {
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => 'ca-news-list-template-4',
+    'body_classes_to_add' => 'ca-news-list ca-news-list-template-4',
     'css_id' => '',
     'css' => '',
     'contexts' => array(),
@@ -1493,7 +1495,7 @@ function ca_news_default_page_manager_pages() {
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'body_classes_to_remove' => '',
-    'body_classes_to_add' => 'ca-news-list-template-5',
+    'body_classes_to_add' => 'ca-news-list ca-news-list-template-5',
     'css_id' => '',
     'css' => '',
     'contexts' => array(),
