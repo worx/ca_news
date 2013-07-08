@@ -368,8 +368,8 @@ function ca_news_views_default_views() {
     'ca_news' => 'ca_news',
   );
 
-  /* Display: Most Recent News Block Template One */
-  $handler = $view->new_display('block', 'Most Recent News Block Template One', 'ca_news_block_1');
+  /* Display: CA News: News Block Template One */
+  $handler = $view->new_display('block', 'CA News: News Block Template One', 'ca_news_block_1');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Recent News';
   $handler->display->display_options['defaults']['css_class'] = FALSE;
@@ -432,10 +432,10 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['addtoany_link']['label'] = '';
   $handler->display->display_options['fields']['addtoany_link']['element_class'] = 'ca-addtoany-feature';
   $handler->display->display_options['fields']['addtoany_link']['element_label_colon'] = FALSE;
-  $handler->display->display_options['block_description'] = 'CA News Most Recent News Template One';
+  $handler->display->display_options['block_description'] = 'CA News: News Block Template One';
 
-  /* Display: Most Recent News Block Template Two */
-  $handler = $view->new_display('block', 'Most Recent News Block Template Two', 'ca_news_block_2');
+  /* Display: CA News: News Block Template Two */
+  $handler = $view->new_display('block', 'CA News: News Block Template Two', 'ca_news_block_2');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Recent News';
   $handler->display->display_options['defaults']['css_class'] = FALSE;
@@ -453,10 +453,10 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  $handler->display->display_options['block_description'] = 'CA News Most Recent News Template Two';
+  $handler->display->display_options['block_description'] = 'CA News: News Block Template Two';
 
-  /* Display: Most Recent News Block Template Three */
-  $handler = $view->new_display('block', 'Most Recent News Block Template Three', 'ca_news_block_3');
+  /* Display: CA News: News Block Template Three */
+  $handler = $view->new_display('block', 'CA News: News Block Template Three', 'ca_news_block_3');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Recent News';
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
@@ -505,10 +505,10 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['view_node']['label'] = '';
   $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['view_node']['text'] = 'Read More';
-  $handler->display->display_options['block_description'] = 'CA News Most Recent News Template Three';
+  $handler->display->display_options['block_description'] = 'CA News: News Block Template Three';
 
-  /* Display: Most Recent News Block Template Four */
-  $handler = $view->new_display('block', 'Most Recent News Block Template Four', 'ca_news_block_4');
+  /* Display: CA News: News Block Template Four */
+  $handler = $view->new_display('block', 'CA News: News Block Template Four', 'ca_news_block_4');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'full';
@@ -570,7 +570,7 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
-  $handler->display->display_options['block_description'] = 'CA News Most Recent News Template Four';
+  $handler->display->display_options['block_description'] = 'CA News: News Block Template Four';
   $export['ca_news_blocks'] = $view;
 
   $view = new view();
