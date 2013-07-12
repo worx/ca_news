@@ -48,6 +48,8 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['field_ca_news_n_image']['field'] = 'field_ca_news_n_image';
   $handler->display->display_options['fields']['field_ca_news_n_image']['label'] = '';
   $handler->display->display_options['fields']['field_ca_news_n_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_ca_news_n_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_news_n_image']['settings'] = array(
     'image_style' => 'default',
@@ -325,6 +327,8 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['field_ca_news_n_image']['field'] = 'field_ca_news_n_image';
   $handler->display->display_options['fields']['field_ca_news_n_image']['label'] = '';
   $handler->display->display_options['fields']['field_ca_news_n_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_ca_news_n_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_news_n_image']['settings'] = array(
     'image_style' => 'default',
@@ -394,6 +398,8 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['field_ca_news_n_image']['field'] = 'field_ca_news_n_image';
   $handler->display->display_options['fields']['field_ca_news_n_image']['label'] = '';
   $handler->display->display_options['fields']['field_ca_news_n_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_ca_news_n_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_news_n_image']['settings'] = array(
     'image_style' => 'thumbnail',
@@ -471,6 +477,8 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['field_ca_news_n_image']['field'] = 'field_ca_news_n_image';
   $handler->display->display_options['fields']['field_ca_news_n_image']['label'] = '';
   $handler->display->display_options['fields']['field_ca_news_n_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_ca_news_n_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_news_n_image']['settings'] = array(
     'image_style' => 'default',
@@ -530,6 +538,8 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['field_ca_news_n_image']['field'] = 'field_ca_news_n_image';
   $handler->display->display_options['fields']['field_ca_news_n_image']['label'] = '';
   $handler->display->display_options['fields']['field_ca_news_n_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_ca_news_n_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_news_n_image']['settings'] = array(
     'image_style' => 'default_thumbnail',
@@ -611,6 +621,8 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['field_ca_news_n_image']['field'] = 'field_ca_news_n_image';
   $handler->display->display_options['fields']['field_ca_news_n_image']['label'] = '';
   $handler->display->display_options['fields']['field_ca_news_n_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_ca_news_n_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_news_n_image']['settings'] = array(
     'image_style' => 'default',
@@ -687,6 +699,8 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['field_ca_news_n_image']['field'] = 'field_ca_news_n_image';
   $handler->display->display_options['fields']['field_ca_news_n_image']['label'] = '';
   $handler->display->display_options['fields']['field_ca_news_n_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_ca_news_n_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_news_n_image']['settings'] = array(
     'image_style' => 'default',
@@ -773,6 +787,8 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['field_ca_news_n_image']['field'] = 'field_ca_news_n_image';
   $handler->display->display_options['fields']['field_ca_news_n_image']['label'] = '';
   $handler->display->display_options['fields']['field_ca_news_n_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_ca_news_n_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_news_n_image']['settings'] = array(
     'image_style' => 'default',
@@ -850,6 +866,8 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['field_ca_news_n_image']['field'] = 'field_ca_news_n_image';
   $handler->display->display_options['fields']['field_ca_news_n_image']['label'] = '';
   $handler->display->display_options['fields']['field_ca_news_n_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_ca_news_n_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_news_n_image']['settings'] = array(
     'image_style' => 'default',
@@ -938,6 +956,8 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['field_ca_news_n_image']['field'] = 'field_ca_news_n_image';
   $handler->display->display_options['fields']['field_ca_news_n_image']['label'] = '';
   $handler->display->display_options['fields']['field_ca_news_n_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_ca_news_n_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_news_n_image']['settings'] = array(
     'image_style' => 'default_thumbnail',
@@ -1034,6 +1054,8 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['field_ca_news_n_image']['field'] = 'field_ca_news_n_image';
   $handler->display->display_options['fields']['field_ca_news_n_image']['label'] = '';
   $handler->display->display_options['fields']['field_ca_news_n_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_ca_news_n_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_news_n_image']['settings'] = array(
     'image_style' => 'default',
@@ -1111,6 +1133,8 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['field_ca_news_n_image']['field'] = 'field_ca_news_n_image';
   $handler->display->display_options['fields']['field_ca_news_n_image']['label'] = '';
   $handler->display->display_options['fields']['field_ca_news_n_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_ca_news_n_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_news_n_image']['settings'] = array(
     'image_style' => 'default',
@@ -1199,6 +1223,8 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['field_ca_news_n_image']['field'] = 'field_ca_news_n_image';
   $handler->display->display_options['fields']['field_ca_news_n_image']['label'] = '';
   $handler->display->display_options['fields']['field_ca_news_n_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_ca_news_n_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_news_n_image']['settings'] = array(
     'image_style' => 'default_thumbnail',
@@ -1323,6 +1349,8 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['field_ca_news_n_image']['field'] = 'field_ca_news_n_image';
   $handler->display->display_options['fields']['field_ca_news_n_image']['label'] = '';
   $handler->display->display_options['fields']['field_ca_news_n_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_ca_news_n_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_news_n_image']['settings'] = array(
     'image_style' => 'default',
@@ -1390,6 +1418,8 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['field_ca_news_n_image']['field'] = 'field_ca_news_n_image';
   $handler->display->display_options['fields']['field_ca_news_n_image']['label'] = '';
   $handler->display->display_options['fields']['field_ca_news_n_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_ca_news_n_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_news_n_image']['type'] = 'colorbox';
   $handler->display->display_options['fields']['field_ca_news_n_image']['settings'] = array(
@@ -1449,6 +1479,8 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['field_ca_news_n_image']['field'] = 'field_ca_news_n_image';
   $handler->display->display_options['fields']['field_ca_news_n_image']['label'] = '';
   $handler->display->display_options['fields']['field_ca_news_n_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_ca_news_n_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_news_n_image']['type'] = 'colorbox';
   $handler->display->display_options['fields']['field_ca_news_n_image']['settings'] = array(
@@ -1507,6 +1539,8 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['field_ca_news_n_image']['field'] = 'field_ca_news_n_image';
   $handler->display->display_options['fields']['field_ca_news_n_image']['label'] = '';
   $handler->display->display_options['fields']['field_ca_news_n_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_ca_news_n_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_news_n_image']['type'] = 'colorbox';
   $handler->display->display_options['fields']['field_ca_news_n_image']['settings'] = array(
@@ -1557,6 +1591,8 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['field_ca_news_n_image']['field'] = 'field_ca_news_n_image';
   $handler->display->display_options['fields']['field_ca_news_n_image']['label'] = '';
   $handler->display->display_options['fields']['field_ca_news_n_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_ca_news_n_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_news_n_image']['type'] = 'colorbox';
   $handler->display->display_options['fields']['field_ca_news_n_image']['settings'] = array(
@@ -1622,6 +1658,8 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['field_ca_news_n_image']['field'] = 'field_ca_news_n_image';
   $handler->display->display_options['fields']['field_ca_news_n_image']['label'] = '';
   $handler->display->display_options['fields']['field_ca_news_n_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_ca_news_n_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_news_n_image']['settings'] = array(
     'image_style' => 'default',
@@ -1688,6 +1726,8 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['field_ca_news_n_image']['field'] = 'field_ca_news_n_image';
   $handler->display->display_options['fields']['field_ca_news_n_image']['label'] = '';
   $handler->display->display_options['fields']['field_ca_news_n_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_ca_news_n_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_news_n_image']['settings'] = array(
     'image_style' => 'default',
@@ -1774,6 +1814,8 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['field_ca_news_n_image']['field'] = 'field_ca_news_n_image';
   $handler->display->display_options['fields']['field_ca_news_n_image']['label'] = '';
   $handler->display->display_options['fields']['field_ca_news_n_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_ca_news_n_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_news_n_image']['settings'] = array(
     'image_style' => 'default',
@@ -1852,6 +1894,8 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['field_ca_news_n_image']['field'] = 'field_ca_news_n_image';
   $handler->display->display_options['fields']['field_ca_news_n_image']['label'] = '';
   $handler->display->display_options['fields']['field_ca_news_n_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_ca_news_n_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_news_n_image']['settings'] = array(
     'image_style' => 'default',
@@ -1940,6 +1984,8 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['field_ca_news_n_image']['field'] = 'field_ca_news_n_image';
   $handler->display->display_options['fields']['field_ca_news_n_image']['label'] = '';
   $handler->display->display_options['fields']['field_ca_news_n_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_ca_news_n_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_news_n_image']['settings'] = array(
     'image_style' => 'default_thumbnail',
@@ -2036,6 +2082,8 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['field_ca_news_n_image']['field'] = 'field_ca_news_n_image';
   $handler->display->display_options['fields']['field_ca_news_n_image']['label'] = '';
   $handler->display->display_options['fields']['field_ca_news_n_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_ca_news_n_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_news_n_image']['settings'] = array(
     'image_style' => 'default',
@@ -2113,6 +2161,8 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['field_ca_news_n_image']['field'] = 'field_ca_news_n_image';
   $handler->display->display_options['fields']['field_ca_news_n_image']['label'] = '';
   $handler->display->display_options['fields']['field_ca_news_n_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_ca_news_n_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_news_n_image']['settings'] = array(
     'image_style' => 'default',
@@ -2201,6 +2251,8 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['field_ca_news_n_image']['field'] = 'field_ca_news_n_image';
   $handler->display->display_options['fields']['field_ca_news_n_image']['label'] = '';
   $handler->display->display_options['fields']['field_ca_news_n_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_ca_news_n_image']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_ca_news_n_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_news_n_image']['settings'] = array(
     'image_style' => 'default_thumbnail',
