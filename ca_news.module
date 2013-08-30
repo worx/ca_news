@@ -75,6 +75,9 @@ function ca_news_views_pre_view(&$view, &$display_id, &$args) {
   if ($display_id == 'ca_news_block_1') {
     $view->set_items_per_page(variable_get('ca_news_block_count', 1));
   }
+	if ($display_id == 'ca_news_block_3') {
+    $view->set_items_per_page(variable_get('ca_news_block_count', 1));
+  }
 }
 
 /**
