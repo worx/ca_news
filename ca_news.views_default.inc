@@ -23,6 +23,7 @@ function ca_news_views_default_views() {
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'CA News: List Template One';
+  $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -1295,16 +1296,16 @@ function ca_news_views_default_views() {
   $handler->display->display_options['pane_category']['weight'] = '0';
 
   /* Display: Feed */
-  $handler = $view->new_display('feed', 'Feed', 'feed_1');
+  $handler = $view->new_display('feed', 'Feed', 'ca_news_feed');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'News RSS Feed';
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
-  $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '25';
+  $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'rss';
   $handler->display->display_options['row_plugin'] = 'node_rss';
   $handler->display->display_options['row_options']['item_length'] = 'rss';
+  $handler->display->display_options['defaults']['empty'] = FALSE;
   $handler->display->display_options['path'] = 'news/rss-feed';
   $handler->display->display_options['displays'] = array(
     'ca_news_list_1' => 'ca_news_list_1',
@@ -1641,6 +1642,7 @@ function ca_news_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
