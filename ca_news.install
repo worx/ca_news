@@ -21,4 +21,7 @@ function ca_news_install() {
 	
   // Set the Pathauto for the node.
   variable_set('pathauto_node_ca_news_pattern', 'news/[node:title]');
+	
+  // Set the Pathauto for the term.
+  variable_set('pathauto_taxonomy_term_ca_news_categories_pattern', 'news/[term:vocabulary]/[term:name]');
 }

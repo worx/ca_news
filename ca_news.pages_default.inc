@@ -604,8 +604,8 @@ function ca_news_default_page_manager_handlers() {
         0 => array(
           'name' => 'term_vocabulary',
           'settings' => array(
-            'vids' => array(
-              1 => '1',
+            'machine_name' => array(
+              'ca_news_categories' => 'ca_news_categories',
             ),
           ),
           'context' => 'argument_term_1',
@@ -681,8 +681,8 @@ function ca_news_default_page_manager_handlers() {
         0 => array(
           'name' => 'term_vocabulary',
           'settings' => array(
-            'vids' => array(
-              1 => '1',
+            'machine_name' => array(
+              'ca_news_categories' => 'ca_news_categories',
             ),
           ),
           'context' => 'argument_term_1',
@@ -758,8 +758,8 @@ function ca_news_default_page_manager_handlers() {
         0 => array(
           'name' => 'term_vocabulary',
           'settings' => array(
-            'vids' => array(
-              1 => '1',
+            'machine_name' => array(
+              'ca_news_categories' => 'ca_news_categories',
             ),
           ),
           'context' => 'argument_term_1',
@@ -853,8 +853,8 @@ function ca_news_default_page_manager_handlers() {
         0 => array(
           'name' => 'term_vocabulary',
           'settings' => array(
-            'vids' => array(
-              1 => '1',
+            'machine_name' => array(
+              'ca_news_categories' => 'ca_news_categories',
             ),
           ),
           'context' => 'argument_term_1',
@@ -930,11 +930,18 @@ function ca_news_default_page_manager_handlers() {
         0 => array(
           'name' => 'term_vocabulary',
           'settings' => array(
-            'vids' => array(
-              1 => '1',
+            'machine_name' => array(
+              'ca_news_categories' => 'ca_news_categories',
             ),
           ),
           'context' => 'argument_term_1',
+          'not' => FALSE,
+        ),
+        1 => array(
+          'name' => 'ca_news_term_template',
+          'settings' => array(
+            'ca_news_term_template' => 'ca_news_term_template_five',
+          ),
           'not' => FALSE,
         ),
       ),

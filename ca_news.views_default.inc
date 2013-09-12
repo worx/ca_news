@@ -949,6 +949,13 @@ function ca_news_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['empty'] = FALSE;
+  /* No results behavior: Global: Text area */
+  $handler->display->display_options['empty']['area']['id'] = 'area';
+  $handler->display->display_options['empty']['area']['table'] = 'views';
+  $handler->display->display_options['empty']['area']['field'] = 'area';
+  $handler->display->display_options['empty']['area']['empty'] = TRUE;
+  $handler->display->display_options['empty']['area']['format'] = 'filtered_html';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -1216,6 +1223,13 @@ function ca_news_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['empty'] = FALSE;
+  /* No results behavior: Global: Text area */
+  $handler->display->display_options['empty']['area']['id'] = 'area';
+  $handler->display->display_options['empty']['area']['table'] = 'views';
+  $handler->display->display_options['empty']['area']['field'] = 'area';
+  $handler->display->display_options['empty']['area']['empty'] = TRUE;
+  $handler->display->display_options['empty']['area']['format'] = 'filtered_html';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -1310,12 +1324,12 @@ function ca_news_views_default_views() {
   $handler->display->display_options['displays'] = array(
     'ca_news_list_1' => 'ca_news_list_1',
     'ca_news_list_2' => 'ca_news_list_2',
-    'ca_news_list_3_main' => 'ca_news_list_3_main',
     'ca_news_list_3_sub' => 'ca_news_list_3_sub',
     'ca_news_list_4' => 'ca_news_list_4',
     'ca_news_list_5_main' => 'ca_news_list_5_main',
-    'ca_news_list_5_sub' => 'ca_news_list_5_sub',
     'default' => 0,
+    'ca_news_list_3_main' => 0,
+    'ca_news_list_5_sub' => 0,
   );
   $handler->display->display_options['sitename_title'] = 0;
   $export['ca_news_lists'] = $view;
@@ -2474,16 +2488,16 @@ function ca_news_views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'rss';
   $handler->display->display_options['row_plugin'] = 'node_rss';
-  $handler->display->display_options['path'] = 'categories/%/feed';
+  $handler->display->display_options['path'] = 'news/categories/%/feed';
   $handler->display->display_options['displays'] = array(
     'ca_news_term_list_1' => 'ca_news_term_list_1',
     'ca_news_term_list_2' => 'ca_news_term_list_2',
-    'ca_news_term_list_3_main' => 'ca_news_term_list_3_main',
     'ca_news_term_list_3_sub' => 'ca_news_term_list_3_sub',
     'ca_news_term_list_4' => 'ca_news_term_list_4',
     'ca_news_term_list_5_main' => 'ca_news_term_list_5_main',
-    'ca_news_list_5_sub' => 'ca_news_list_5_sub',
     'default' => 0,
+    'ca_news_term_list_3_main' => 0,
+    'ca_news_list_5_sub' => 0,
   );
   $export['ca_news_term'] = $view;
 

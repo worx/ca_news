@@ -55,11 +55,11 @@ function ca_news_panels_pre_render($panel, $renderer) {
       $panel->title = variable_get('ca_news_panel_title', 'News');
     } elseif ($value->subtype == 'ca_news_lists-ca_news_list_2') {
       $panel->title = variable_get('ca_news_panel_title', 'News');
-    } elseif ($value->subtype == 'ca_news_lists-ca_news_list_3') {
+    } elseif ($value->subtype == 'ca_news_lists-ca_news_list_3_main') {
       $panel->title = variable_get('ca_news_panel_title', 'News');
     } elseif ($value->subtype == 'ca_news_lists-ca_news_list_4') {
       $panel->title = variable_get('ca_news_panel_title', 'News');
-    } elseif ($value->subtype == 'ca_news_lists-ca_news_list_5') {
+    } elseif ($value->subtype == 'ca_news_lists-ca_news_list_5_main') {
       $panel->title = variable_get('ca_news_panel_title', 'News');
     }
   }
