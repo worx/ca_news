@@ -43,6 +43,15 @@ function ca_news_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete terms in ca_news_categories'.
+  $permissions['delete terms in ca_news_categories'] = array(
+    'name' => 'delete terms in ca_news_categories',
+    'roles' => array(
+      'news admin' => 'news admin',
+    ),
+    'module' => 'taxonomy',
+  );
+
   // Exported permission: 'edit any ca_news content'.
   $permissions['edit any ca_news content'] = array(
     'name' => 'edit any ca_news content',
@@ -63,6 +72,15 @@ function ca_news_user_default_permissions() {
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: 'edit terms in ca_news_categories'.
+  $permissions['edit terms in ca_news_categories'] = array(
+    'name' => 'edit terms in ca_news_categories',
+    'roles' => array(
+      'news admin' => 'news admin',
+    ),
+    'module' => 'taxonomy',
   );
 
   return $permissions;

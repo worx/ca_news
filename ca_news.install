@@ -24,4 +24,11 @@ function ca_news_install() {
 	
   // Set the Pathauto for the term.
   variable_set('pathauto_taxonomy_term_ca_news_categories_pattern', 'news/[term:vocabulary]/[term:name]');
+
+  // Set the Administer Taxonomy for News Admin
+  user_role_change_permissions(227698236, 
+    array(
+      'administer taxonomy' => TRUE,
+    )
+  );
 }
