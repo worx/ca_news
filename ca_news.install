@@ -25,6 +25,9 @@ function ca_news_install() {
   // Set the Pathauto for the term.
   variable_set('pathauto_taxonomy_term_ca_news_categories_pattern', 'news/[term:vocabulary]/[term:name]');
 
+  // Enable the taxonomy/term/%taxonomy_term page without creating a conflict with other features that the page enabled as well.
+  variable_set('page_manager_term_view_disabled', '0');
+
   // Set the Administer Taxonomy for News Admin
   user_role_change_permissions(227698236, 
     array(
