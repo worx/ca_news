@@ -136,7 +136,7 @@ function ca_news_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'image',
+      'module' => 'multiupload_imagefield_widget',
       'settings' => array(
         'manualcrop_crop_info' => TRUE,
         'manualcrop_default_crop_area' => TRUE,
@@ -153,7 +153,7 @@ function ca_news_field_default_field_instances() {
         'preview_image_style' => 'thumbnail',
         'progress_indicator' => 'throbber',
       ),
-      'type' => 'image_image',
+      'type' => 'image_miw',
       'weight' => 2,
     ),
   );
