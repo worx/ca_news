@@ -1694,7 +1694,7 @@ function ca_news_default_page_manager_handlers() {
   $handler->handler = 'panel_context';
   $handler->weight = -27;
   $handler->conf = array(
-    'title' => 'CA News: Aurora Term List Template Four',
+    'title' => 'Aurora News: Term List Template Four',
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'body_classes_to_remove' => '',
@@ -1780,7 +1780,7 @@ function ca_news_default_page_manager_handlers() {
   $handler->handler = 'panel_context';
   $handler->weight = -28;
   $handler->conf = array(
-    'title' => 'CA News: Aurora Term List Template Three',
+    'title' => 'Aurora News: Term List Template Three',
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'body_classes_to_remove' => '',
@@ -1885,7 +1885,7 @@ function ca_news_default_page_manager_handlers() {
   $handler->handler = 'panel_context';
   $handler->weight = -29;
   $handler->conf = array(
-    'title' => 'CA News: Aurora Term List Template Two',
+    'title' => 'Aurora News: Term List Template Two',
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'body_classes_to_remove' => '',
@@ -1971,7 +1971,7 @@ function ca_news_default_page_manager_handlers() {
   $handler->handler = 'panel_context';
   $handler->weight = -30;
   $handler->conf = array(
-    'title' => 'CA News: Aurora Term List Template One',
+    'title' => 'Aurora News: Term List Template One',
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'body_classes_to_remove' => '',
@@ -2057,7 +2057,7 @@ function ca_news_default_page_manager_handlers() {
   $handler->handler = 'panel_context';
   $handler->weight = -26;
   $handler->conf = array(
-    'title' => 'CA News: Aurora Term List Template Five',
+    'title' => 'Aurora News: Term List Template Five',
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'body_classes_to_remove' => '',
@@ -2276,69 +2276,13 @@ function ca_news_default_page_manager_pages() {
   $handler = new stdClass();
   $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
   $handler->api_version = 1;
-  $handler->name = 'page_ca_news_administration_panel_context';
-  $handler->task = 'page';
-  $handler->subtask = 'ca_news_administration';
-  $handler->handler = 'panel_context';
-  $handler->weight = -29;
-  $handler->conf = array(
-    'title' => 'CA News: Admin',
-    'no_blocks' => 0,
-    'pipeline' => 'standard',
-    'css_id' => '',
-    'css' => '',
-    'contexts' => array(),
-    'relationships' => array(),
-    'body_classes_to_remove' => '',
-    'body_classes_to_add' => 'ca-admin ca-news-admin',
-  );
-  $display = new panels_display();
-  $display->layout = 'onecol';
-  $display->layout_settings = array();
-  $display->panel_settings = array(
-    'style_settings' => array(
-      'default' => NULL,
-      'middle' => NULL,
-    ),
-  );
-  $display->cache = array();
-  $display->title = '';
-  $display->uuid = '0bcbbc42-46e1-46fa-b5c1-8c6be6129d0d';
-  $display->content = array();
-  $display->panels = array();
-    $pane = new stdClass();
-    $pane->pid = 'new-412f4667-10df-4690-a05d-11dc6e5479d4';
-    $pane->panel = 'middle';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'ca_news_admin-ca_news_admin';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array();
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $pane->uuid = '412f4667-10df-4690-a05d-11dc6e5479d4';
-    $display->content['new-412f4667-10df-4690-a05d-11dc6e5479d4'] = $pane;
-    $display->panels['middle'][0] = 'new-412f4667-10df-4690-a05d-11dc6e5479d4';
-  $display->hide_title = PANELS_TITLE_NONE;
-  $display->title_pane = '0';
-  $handler->conf['display'] = $display;
-  $page->default_handlers[$handler->name] = $handler;
-  $handler = new stdClass();
-  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
-  $handler->api_version = 1;
   $handler->name = 'page_ca_news_administration__panel_context_728d95d8-d6e8-4f36-b51b-1a04eecaca75';
   $handler->task = 'page';
   $handler->subtask = 'ca_news_administration';
   $handler->handler = 'panel_context';
   $handler->weight = -30;
   $handler->conf = array(
-    'title' => 'CA News: Aurora Admin',
+    'title' => 'Aurora News: Admin',
     'no_blocks' => 0,
     'pipeline' => 'standard',
     'css_id' => '',
@@ -2397,6 +2341,62 @@ function ca_news_default_page_manager_pages() {
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
+  $handler = new stdClass();
+  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
+  $handler->api_version = 1;
+  $handler->name = 'page_ca_news_administration_panel_context';
+  $handler->task = 'page';
+  $handler->subtask = 'ca_news_administration';
+  $handler->handler = 'panel_context';
+  $handler->weight = -29;
+  $handler->conf = array(
+    'title' => 'CA News: Admin',
+    'no_blocks' => 0,
+    'pipeline' => 'standard',
+    'css_id' => '',
+    'css' => '',
+    'contexts' => array(),
+    'relationships' => array(),
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => 'ca-admin ca-news-admin',
+  );
+  $display = new panels_display();
+  $display->layout = 'onecol';
+  $display->layout_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'middle' => NULL,
+    ),
+  );
+  $display->cache = array();
+  $display->title = '';
+  $display->uuid = '0bcbbc42-46e1-46fa-b5c1-8c6be6129d0d';
+  $display->content = array();
+  $display->panels = array();
+    $pane = new stdClass();
+    $pane->pid = 'new-412f4667-10df-4690-a05d-11dc6e5479d4';
+    $pane->panel = 'middle';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'ca_news_admin-ca_news_admin';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '412f4667-10df-4690-a05d-11dc6e5479d4';
+    $display->content['new-412f4667-10df-4690-a05d-11dc6e5479d4'] = $pane;
+    $display->panels['middle'][0] = 'new-412f4667-10df-4690-a05d-11dc6e5479d4';
+  $display->hide_title = PANELS_TITLE_NONE;
+  $display->title_pane = '0';
+  $handler->conf['display'] = $display;
+  $page->default_handlers[$handler->name] = $handler;
   $pages['ca_news_administration'] = $page;
 
   $page = new stdClass();
@@ -2428,6 +2428,469 @@ function ca_news_default_page_manager_pages() {
     'admin_paths' => FALSE,
   );
   $page->default_handlers = array();
+  $handler = new stdClass();
+  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
+  $handler->api_version = 1;
+  $handler->name = 'page_ca_news_list_view__panel_context_3eaa2561-2864-4341-909d-b6fae60b49b6';
+  $handler->task = 'page';
+  $handler->subtask = 'ca_news_list_view';
+  $handler->handler = 'panel_context';
+  $handler->weight = -30;
+  $handler->conf = array(
+    'title' => 'Aurora News: List Template One',
+    'no_blocks' => 0,
+    'pipeline' => 'standard',
+    'css_id' => '',
+    'css' => '',
+    'contexts' => array(),
+    'relationships' => array(),
+    'access' => array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'ca_news_list_template',
+          'settings' => array(
+            'ca_news_list_template' => 'ca_news_list_template_one',
+          ),
+          'not' => FALSE,
+        ),
+        1 => array(
+          'name' => 'worx_aurora_base_settings',
+          'settings' => array(
+            'worx_aurora_base_enable' => 'worx_aurora_base_enabled',
+          ),
+          'not' => FALSE,
+        ),
+      ),
+      'logic' => 'and',
+    ),
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => 'ca-news-list ca-news-list-template-1',
+  );
+  $display = new panels_display();
+  $display->layout = 'worx_aurora';
+  $display->layout_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'middle' => NULL,
+    ),
+  );
+  $display->cache = array();
+  $display->title = '';
+  $display->uuid = 'c6940465-b969-4433-b446-b5d964062140';
+  $display->content = array();
+  $display->panels = array();
+    $pane = new stdClass();
+    $pane->pid = 'new-11c86008-877e-42fa-b2ee-388aa8c4fa0d';
+    $pane->panel = 'first-first';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'ca_news_lists-ca_news_list_1';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '11c86008-877e-42fa-b2ee-388aa8c4fa0d';
+    $display->content['new-11c86008-877e-42fa-b2ee-388aa8c4fa0d'] = $pane;
+    $display->panels['first-first'][0] = 'new-11c86008-877e-42fa-b2ee-388aa8c4fa0d';
+  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->title_pane = '0';
+  $handler->conf['display'] = $display;
+  $page->default_handlers[$handler->name] = $handler;
+  $handler = new stdClass();
+  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
+  $handler->api_version = 1;
+  $handler->name = 'page_ca_news_list_view__panel_context_98383cc1-86f7-40d8-9715-ae6faa6d734a';
+  $handler->task = 'page';
+  $handler->subtask = 'ca_news_list_view';
+  $handler->handler = 'panel_context';
+  $handler->weight = -29;
+  $handler->conf = array(
+    'title' => 'Aurora News: List Template Two',
+    'no_blocks' => 0,
+    'pipeline' => 'standard',
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => 'ca-news-list ca-news-list-template-2',
+    'css_id' => '',
+    'css' => '',
+    'contexts' => array(),
+    'relationships' => array(),
+    'access' => array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'ca_news_list_template',
+          'settings' => array(
+            'ca_news_list_template' => 'ca_news_list_template_two',
+          ),
+          'not' => FALSE,
+        ),
+        1 => array(
+          'name' => 'worx_aurora_base_settings',
+          'settings' => array(
+            'worx_aurora_base_enable' => 'worx_aurora_base_enabled',
+          ),
+          'not' => FALSE,
+        ),
+      ),
+      'logic' => 'and',
+    ),
+  );
+  $display = new panels_display();
+  $display->layout = 'worx_aurora';
+  $display->layout_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'middle' => NULL,
+      'first-first' => NULL,
+      'first-second' => NULL,
+      'first-third' => NULL,
+      'first-fourth' => NULL,
+      'first-fifth' => NULL,
+      'first-sixth' => NULL,
+      'second-first' => NULL,
+      'second-second' => NULL,
+      'second-third' => NULL,
+      'second-fourth' => NULL,
+      'second-fifth' => NULL,
+      'second-sixth' => NULL,
+      'third-first' => NULL,
+      'third-second' => NULL,
+      'third-third' => NULL,
+      'third-fourth' => NULL,
+      'third-fifth' => NULL,
+      'third-sixth' => NULL,
+      'fourth-first' => NULL,
+      'fourth-second' => NULL,
+      'fourth-third' => NULL,
+      'fourth-fourth' => NULL,
+      'fourth-fifth' => NULL,
+      'fourth-sixth' => NULL,
+      'fifth-first' => NULL,
+      'fifth-second' => NULL,
+      'fifth-third' => NULL,
+      'fifth-fourth' => NULL,
+      'fifth-fifth' => NULL,
+      'fifth-sixth' => NULL,
+      'sixth-first' => NULL,
+      'sixth-second' => NULL,
+      'sixth-third' => NULL,
+      'sixth-fourth' => NULL,
+      'sixth-fifth' => NULL,
+      'sixth-sixth' => NULL,
+      'seventh-first' => NULL,
+      'seventh-second' => NULL,
+      'seventh-third' => NULL,
+      'seventh-fourth' => NULL,
+      'seventh-fifth' => NULL,
+      'seventh-sixth' => NULL,
+      'eighth-first' => NULL,
+      'eighth-second' => NULL,
+      'eighth-third' => NULL,
+      'eighth-fourth' => NULL,
+      'eighth-fifth' => NULL,
+      'eighth-sixth' => NULL,
+    ),
+  );
+  $display->cache = array();
+  $display->title = '';
+  $display->uuid = '59487925-0d79-4d36-8c0e-d442c7dfc892';
+  $display->content = array();
+  $display->panels = array();
+    $pane = new stdClass();
+    $pane->pid = 'new-81c3553f-aee9-48a3-9080-442f91ef3f85';
+    $pane->panel = 'first-first';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'ca_news_lists-ca_news_list_2';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '81c3553f-aee9-48a3-9080-442f91ef3f85';
+    $display->content['new-81c3553f-aee9-48a3-9080-442f91ef3f85'] = $pane;
+    $display->panels['first-first'][0] = 'new-81c3553f-aee9-48a3-9080-442f91ef3f85';
+  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->title_pane = 'new-81c3553f-aee9-48a3-9080-442f91ef3f85';
+  $handler->conf['display'] = $display;
+  $page->default_handlers[$handler->name] = $handler;
+  $handler = new stdClass();
+  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
+  $handler->api_version = 1;
+  $handler->name = 'page_ca_news_list_view__panel_context_a2a6059e-7445-4362-9bae-0b8c4a11de4a';
+  $handler->task = 'page';
+  $handler->subtask = 'ca_news_list_view';
+  $handler->handler = 'panel_context';
+  $handler->weight = -28;
+  $handler->conf = array(
+    'title' => 'Aurora News: List Template Three',
+    'no_blocks' => 0,
+    'pipeline' => 'standard',
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => 'ca-news-list ca-news-list-template-3',
+    'css_id' => '',
+    'css' => '',
+    'contexts' => array(),
+    'relationships' => array(),
+    'access' => array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'ca_news_list_template',
+          'settings' => array(
+            'ca_news_list_template' => 'ca_news_list_template_three',
+          ),
+          'not' => FALSE,
+        ),
+        1 => array(
+          'name' => 'worx_aurora_base_settings',
+          'settings' => array(
+            'worx_aurora_base_enable' => 'worx_aurora_base_enabled',
+          ),
+          'not' => FALSE,
+        ),
+      ),
+      'logic' => 'and',
+    ),
+  );
+  $display = new panels_display();
+  $display->layout = 'worx_aurora';
+  $display->layout_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'middle' => NULL,
+    ),
+  );
+  $display->cache = array();
+  $display->title = '';
+  $display->uuid = '3f05f7bd-2bcb-45b1-9169-5e76f43c55f2';
+  $display->content = array();
+  $display->panels = array();
+    $pane = new stdClass();
+    $pane->pid = 'new-67ab8eae-143c-41d4-9f1b-b4b9fcc37110';
+    $pane->panel = 'first-first';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'ca_news_lists-ca_news_list_3_main';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '67ab8eae-143c-41d4-9f1b-b4b9fcc37110';
+    $display->content['new-67ab8eae-143c-41d4-9f1b-b4b9fcc37110'] = $pane;
+    $display->panels['first-first'][0] = 'new-67ab8eae-143c-41d4-9f1b-b4b9fcc37110';
+    $pane = new stdClass();
+    $pane->pid = 'new-5d496889-2e9b-44e2-bf7e-83c53a71d279';
+    $pane->panel = 'first-first';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'ca_news_lists-ca_news_list_3_sub';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = '5d496889-2e9b-44e2-bf7e-83c53a71d279';
+    $display->content['new-5d496889-2e9b-44e2-bf7e-83c53a71d279'] = $pane;
+    $display->panels['first-first'][1] = 'new-5d496889-2e9b-44e2-bf7e-83c53a71d279';
+  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->title_pane = 'new-67ab8eae-143c-41d4-9f1b-b4b9fcc37110';
+  $handler->conf['display'] = $display;
+  $page->default_handlers[$handler->name] = $handler;
+  $handler = new stdClass();
+  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
+  $handler->api_version = 1;
+  $handler->name = 'page_ca_news_list_view__panel_context_e5d1fc4b-5b84-440e-bc11-34e2ce965950';
+  $handler->task = 'page';
+  $handler->subtask = 'ca_news_list_view';
+  $handler->handler = 'panel_context';
+  $handler->weight = -27;
+  $handler->conf = array(
+    'title' => 'Aurora News: List Template Four',
+    'no_blocks' => 0,
+    'pipeline' => 'standard',
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => 'ca-news-list ca-news-list-template-4',
+    'css_id' => '',
+    'css' => '',
+    'contexts' => array(),
+    'relationships' => array(),
+    'access' => array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'ca_news_list_template',
+          'settings' => array(
+            'ca_news_list_template' => 'ca_news_list_template_four',
+          ),
+          'not' => FALSE,
+        ),
+        1 => array(
+          'name' => 'worx_aurora_base_settings',
+          'settings' => array(
+            'worx_aurora_base_enable' => 'worx_aurora_base_enabled',
+          ),
+          'not' => FALSE,
+        ),
+      ),
+      'logic' => 'and',
+    ),
+  );
+  $display = new panels_display();
+  $display->layout = 'worx_aurora';
+  $display->layout_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'middle' => NULL,
+    ),
+  );
+  $display->cache = array();
+  $display->title = '';
+  $display->uuid = '77708f6c-77af-4e8f-86c1-436e5e1b6246';
+  $display->content = array();
+  $display->panels = array();
+    $pane = new stdClass();
+    $pane->pid = 'new-6150fc0a-4e4a-4942-90b5-98884b2dab13';
+    $pane->panel = 'first-first';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'ca_news_lists-ca_news_list_4';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '6150fc0a-4e4a-4942-90b5-98884b2dab13';
+    $display->content['new-6150fc0a-4e4a-4942-90b5-98884b2dab13'] = $pane;
+    $display->panels['first-first'][0] = 'new-6150fc0a-4e4a-4942-90b5-98884b2dab13';
+  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->title_pane = 'new-6150fc0a-4e4a-4942-90b5-98884b2dab13';
+  $handler->conf['display'] = $display;
+  $page->default_handlers[$handler->name] = $handler;
+  $handler = new stdClass();
+  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
+  $handler->api_version = 1;
+  $handler->name = 'page_ca_news_list_view__panel_context_85a382e8-145a-47cc-b7fa-b37397710d66';
+  $handler->task = 'page';
+  $handler->subtask = 'ca_news_list_view';
+  $handler->handler = 'panel_context';
+  $handler->weight = -26;
+  $handler->conf = array(
+    'title' => 'Aurora News: List Template Five',
+    'no_blocks' => 0,
+    'pipeline' => 'standard',
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => 'ca-news-list ca-news-list-template-5',
+    'css_id' => '',
+    'css' => '',
+    'contexts' => array(),
+    'relationships' => array(),
+    'access' => array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'ca_news_list_template',
+          'settings' => array(
+            'ca_news_list_template' => 'ca_news_list_template_five',
+          ),
+          'not' => FALSE,
+        ),
+        1 => array(
+          'name' => 'worx_aurora_base_settings',
+          'settings' => array(
+            'worx_aurora_base_enable' => 'worx_aurora_base_enabled',
+          ),
+          'not' => FALSE,
+        ),
+      ),
+      'logic' => 'and',
+    ),
+  );
+  $display = new panels_display();
+  $display->layout = 'worx_aurora';
+  $display->layout_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'middle' => NULL,
+      'left' => NULL,
+      'right' => NULL,
+    ),
+  );
+  $display->cache = array();
+  $display->title = '';
+  $display->uuid = '470e1d32-8137-41d2-9148-7d702d689ce6';
+  $display->content = array();
+  $display->panels = array();
+    $pane = new stdClass();
+    $pane->pid = 'new-57badad2-0b5b-42a9-9cd7-fa81b8f8b8a2';
+    $pane->panel = 'first-first';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'ca_news_lists-ca_news_list_5_main';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '57badad2-0b5b-42a9-9cd7-fa81b8f8b8a2';
+    $display->content['new-57badad2-0b5b-42a9-9cd7-fa81b8f8b8a2'] = $pane;
+    $display->panels['first-first'][0] = 'new-57badad2-0b5b-42a9-9cd7-fa81b8f8b8a2';
+    $pane = new stdClass();
+    $pane->pid = 'new-4c0da5dd-a461-4ad5-b2b4-6d971adabcf4';
+    $pane->panel = 'first-second';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'ca_news_lists-ca_news_list_5_sub';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = '4c0da5dd-a461-4ad5-b2b4-6d971adabcf4';
+    $display->content['new-4c0da5dd-a461-4ad5-b2b4-6d971adabcf4'] = $pane;
+    $display->panels['first-second'][0] = 'new-4c0da5dd-a461-4ad5-b2b4-6d971adabcf4';
+  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->title_pane = 'new-57badad2-0b5b-42a9-9cd7-fa81b8f8b8a2';
+  $handler->conf['display'] = $display;
+  $page->default_handlers[$handler->name] = $handler;
   $handler = new stdClass();
   $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
   $handler->api_version = 1;
@@ -2808,469 +3271,6 @@ function ca_news_default_page_manager_pages() {
   $display->title_pane = 'new-57badad2-0b5b-42a9-9cd7-fa81b8f8b8a2';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
-  $handler = new stdClass();
-  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
-  $handler->api_version = 1;
-  $handler->name = 'page_ca_news_list_view__panel_context_3eaa2561-2864-4341-909d-b6fae60b49b6';
-  $handler->task = 'page';
-  $handler->subtask = 'ca_news_list_view';
-  $handler->handler = 'panel_context';
-  $handler->weight = -30;
-  $handler->conf = array(
-    'title' => 'CA News: Aurora List Template One',
-    'no_blocks' => 0,
-    'pipeline' => 'standard',
-    'css_id' => '',
-    'css' => '',
-    'contexts' => array(),
-    'relationships' => array(),
-    'access' => array(
-      'plugins' => array(
-        0 => array(
-          'name' => 'ca_news_list_template',
-          'settings' => array(
-            'ca_news_list_template' => 'ca_news_list_template_one',
-          ),
-          'not' => FALSE,
-        ),
-        1 => array(
-          'name' => 'worx_aurora_base_settings',
-          'settings' => array(
-            'worx_aurora_base_enable' => 'worx_aurora_base_enabled',
-          ),
-          'not' => FALSE,
-        ),
-      ),
-      'logic' => 'and',
-    ),
-    'body_classes_to_remove' => '',
-    'body_classes_to_add' => 'ca-news-list ca-news-list-template-1',
-  );
-  $display = new panels_display();
-  $display->layout = 'worx_aurora';
-  $display->layout_settings = array();
-  $display->panel_settings = array(
-    'style_settings' => array(
-      'default' => NULL,
-      'middle' => NULL,
-    ),
-  );
-  $display->cache = array();
-  $display->title = '';
-  $display->uuid = 'c6940465-b969-4433-b446-b5d964062140';
-  $display->content = array();
-  $display->panels = array();
-    $pane = new stdClass();
-    $pane->pid = 'new-11c86008-877e-42fa-b2ee-388aa8c4fa0d';
-    $pane->panel = 'first-first';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'ca_news_lists-ca_news_list_1';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array();
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $pane->uuid = '11c86008-877e-42fa-b2ee-388aa8c4fa0d';
-    $display->content['new-11c86008-877e-42fa-b2ee-388aa8c4fa0d'] = $pane;
-    $display->panels['first-first'][0] = 'new-11c86008-877e-42fa-b2ee-388aa8c4fa0d';
-  $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = '0';
-  $handler->conf['display'] = $display;
-  $page->default_handlers[$handler->name] = $handler;
-  $handler = new stdClass();
-  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
-  $handler->api_version = 1;
-  $handler->name = 'page_ca_news_list_view__panel_context_a2a6059e-7445-4362-9bae-0b8c4a11de4a';
-  $handler->task = 'page';
-  $handler->subtask = 'ca_news_list_view';
-  $handler->handler = 'panel_context';
-  $handler->weight = -28;
-  $handler->conf = array(
-    'title' => 'CA News: Aurora List Template Three',
-    'no_blocks' => 0,
-    'pipeline' => 'standard',
-    'body_classes_to_remove' => '',
-    'body_classes_to_add' => 'ca-news-list ca-news-list-template-3',
-    'css_id' => '',
-    'css' => '',
-    'contexts' => array(),
-    'relationships' => array(),
-    'access' => array(
-      'plugins' => array(
-        0 => array(
-          'name' => 'ca_news_list_template',
-          'settings' => array(
-            'ca_news_list_template' => 'ca_news_list_template_three',
-          ),
-          'not' => FALSE,
-        ),
-        1 => array(
-          'name' => 'worx_aurora_base_settings',
-          'settings' => array(
-            'worx_aurora_base_enable' => 'worx_aurora_base_enabled',
-          ),
-          'not' => FALSE,
-        ),
-      ),
-      'logic' => 'and',
-    ),
-  );
-  $display = new panels_display();
-  $display->layout = 'worx_aurora';
-  $display->layout_settings = array();
-  $display->panel_settings = array(
-    'style_settings' => array(
-      'default' => NULL,
-      'middle' => NULL,
-    ),
-  );
-  $display->cache = array();
-  $display->title = '';
-  $display->uuid = '3f05f7bd-2bcb-45b1-9169-5e76f43c55f2';
-  $display->content = array();
-  $display->panels = array();
-    $pane = new stdClass();
-    $pane->pid = 'new-67ab8eae-143c-41d4-9f1b-b4b9fcc37110';
-    $pane->panel = 'first-first';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'ca_news_lists-ca_news_list_3_main';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array();
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $pane->uuid = '67ab8eae-143c-41d4-9f1b-b4b9fcc37110';
-    $display->content['new-67ab8eae-143c-41d4-9f1b-b4b9fcc37110'] = $pane;
-    $display->panels['first-first'][0] = 'new-67ab8eae-143c-41d4-9f1b-b4b9fcc37110';
-    $pane = new stdClass();
-    $pane->pid = 'new-5d496889-2e9b-44e2-bf7e-83c53a71d279';
-    $pane->panel = 'first-first';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'ca_news_lists-ca_news_list_3_sub';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array();
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $pane->uuid = '5d496889-2e9b-44e2-bf7e-83c53a71d279';
-    $display->content['new-5d496889-2e9b-44e2-bf7e-83c53a71d279'] = $pane;
-    $display->panels['first-first'][1] = 'new-5d496889-2e9b-44e2-bf7e-83c53a71d279';
-  $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-67ab8eae-143c-41d4-9f1b-b4b9fcc37110';
-  $handler->conf['display'] = $display;
-  $page->default_handlers[$handler->name] = $handler;
-  $handler = new stdClass();
-  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
-  $handler->api_version = 1;
-  $handler->name = 'page_ca_news_list_view__panel_context_e5d1fc4b-5b84-440e-bc11-34e2ce965950';
-  $handler->task = 'page';
-  $handler->subtask = 'ca_news_list_view';
-  $handler->handler = 'panel_context';
-  $handler->weight = -27;
-  $handler->conf = array(
-    'title' => 'CA News: Aurora List Template Four',
-    'no_blocks' => 0,
-    'pipeline' => 'standard',
-    'body_classes_to_remove' => '',
-    'body_classes_to_add' => 'ca-news-list ca-news-list-template-4',
-    'css_id' => '',
-    'css' => '',
-    'contexts' => array(),
-    'relationships' => array(),
-    'access' => array(
-      'plugins' => array(
-        0 => array(
-          'name' => 'ca_news_list_template',
-          'settings' => array(
-            'ca_news_list_template' => 'ca_news_list_template_four',
-          ),
-          'not' => FALSE,
-        ),
-        1 => array(
-          'name' => 'worx_aurora_base_settings',
-          'settings' => array(
-            'worx_aurora_base_enable' => 'worx_aurora_base_enabled',
-          ),
-          'not' => FALSE,
-        ),
-      ),
-      'logic' => 'and',
-    ),
-  );
-  $display = new panels_display();
-  $display->layout = 'worx_aurora';
-  $display->layout_settings = array();
-  $display->panel_settings = array(
-    'style_settings' => array(
-      'default' => NULL,
-      'middle' => NULL,
-    ),
-  );
-  $display->cache = array();
-  $display->title = '';
-  $display->uuid = '77708f6c-77af-4e8f-86c1-436e5e1b6246';
-  $display->content = array();
-  $display->panels = array();
-    $pane = new stdClass();
-    $pane->pid = 'new-6150fc0a-4e4a-4942-90b5-98884b2dab13';
-    $pane->panel = 'first-first';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'ca_news_lists-ca_news_list_4';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array();
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $pane->uuid = '6150fc0a-4e4a-4942-90b5-98884b2dab13';
-    $display->content['new-6150fc0a-4e4a-4942-90b5-98884b2dab13'] = $pane;
-    $display->panels['first-first'][0] = 'new-6150fc0a-4e4a-4942-90b5-98884b2dab13';
-  $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-6150fc0a-4e4a-4942-90b5-98884b2dab13';
-  $handler->conf['display'] = $display;
-  $page->default_handlers[$handler->name] = $handler;
-  $handler = new stdClass();
-  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
-  $handler->api_version = 1;
-  $handler->name = 'page_ca_news_list_view__panel_context_98383cc1-86f7-40d8-9715-ae6faa6d734a';
-  $handler->task = 'page';
-  $handler->subtask = 'ca_news_list_view';
-  $handler->handler = 'panel_context';
-  $handler->weight = -29;
-  $handler->conf = array(
-    'title' => 'CA News: Aurora List Template Two',
-    'no_blocks' => 0,
-    'pipeline' => 'standard',
-    'body_classes_to_remove' => '',
-    'body_classes_to_add' => 'ca-news-list ca-news-list-template-2',
-    'css_id' => '',
-    'css' => '',
-    'contexts' => array(),
-    'relationships' => array(),
-    'access' => array(
-      'plugins' => array(
-        0 => array(
-          'name' => 'ca_news_list_template',
-          'settings' => array(
-            'ca_news_list_template' => 'ca_news_list_template_two',
-          ),
-          'not' => FALSE,
-        ),
-        1 => array(
-          'name' => 'worx_aurora_base_settings',
-          'settings' => array(
-            'worx_aurora_base_enable' => 'worx_aurora_base_enabled',
-          ),
-          'not' => FALSE,
-        ),
-      ),
-      'logic' => 'and',
-    ),
-  );
-  $display = new panels_display();
-  $display->layout = 'worx_aurora';
-  $display->layout_settings = array();
-  $display->panel_settings = array(
-    'style_settings' => array(
-      'default' => NULL,
-      'middle' => NULL,
-      'first-first' => NULL,
-      'first-second' => NULL,
-      'first-third' => NULL,
-      'first-fourth' => NULL,
-      'first-fifth' => NULL,
-      'first-sixth' => NULL,
-      'second-first' => NULL,
-      'second-second' => NULL,
-      'second-third' => NULL,
-      'second-fourth' => NULL,
-      'second-fifth' => NULL,
-      'second-sixth' => NULL,
-      'third-first' => NULL,
-      'third-second' => NULL,
-      'third-third' => NULL,
-      'third-fourth' => NULL,
-      'third-fifth' => NULL,
-      'third-sixth' => NULL,
-      'fourth-first' => NULL,
-      'fourth-second' => NULL,
-      'fourth-third' => NULL,
-      'fourth-fourth' => NULL,
-      'fourth-fifth' => NULL,
-      'fourth-sixth' => NULL,
-      'fifth-first' => NULL,
-      'fifth-second' => NULL,
-      'fifth-third' => NULL,
-      'fifth-fourth' => NULL,
-      'fifth-fifth' => NULL,
-      'fifth-sixth' => NULL,
-      'sixth-first' => NULL,
-      'sixth-second' => NULL,
-      'sixth-third' => NULL,
-      'sixth-fourth' => NULL,
-      'sixth-fifth' => NULL,
-      'sixth-sixth' => NULL,
-      'seventh-first' => NULL,
-      'seventh-second' => NULL,
-      'seventh-third' => NULL,
-      'seventh-fourth' => NULL,
-      'seventh-fifth' => NULL,
-      'seventh-sixth' => NULL,
-      'eighth-first' => NULL,
-      'eighth-second' => NULL,
-      'eighth-third' => NULL,
-      'eighth-fourth' => NULL,
-      'eighth-fifth' => NULL,
-      'eighth-sixth' => NULL,
-    ),
-  );
-  $display->cache = array();
-  $display->title = '';
-  $display->uuid = '59487925-0d79-4d36-8c0e-d442c7dfc892';
-  $display->content = array();
-  $display->panels = array();
-    $pane = new stdClass();
-    $pane->pid = 'new-81c3553f-aee9-48a3-9080-442f91ef3f85';
-    $pane->panel = 'first-first';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'ca_news_lists-ca_news_list_2';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array();
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $pane->uuid = '81c3553f-aee9-48a3-9080-442f91ef3f85';
-    $display->content['new-81c3553f-aee9-48a3-9080-442f91ef3f85'] = $pane;
-    $display->panels['first-first'][0] = 'new-81c3553f-aee9-48a3-9080-442f91ef3f85';
-  $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-81c3553f-aee9-48a3-9080-442f91ef3f85';
-  $handler->conf['display'] = $display;
-  $page->default_handlers[$handler->name] = $handler;
-  $handler = new stdClass();
-  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
-  $handler->api_version = 1;
-  $handler->name = 'page_ca_news_list_view__panel_context_85a382e8-145a-47cc-b7fa-b37397710d66';
-  $handler->task = 'page';
-  $handler->subtask = 'ca_news_list_view';
-  $handler->handler = 'panel_context';
-  $handler->weight = -26;
-  $handler->conf = array(
-    'title' => 'CA News: Aurora List Template Five',
-    'no_blocks' => 0,
-    'pipeline' => 'standard',
-    'body_classes_to_remove' => '',
-    'body_classes_to_add' => 'ca-news-list ca-news-list-template-5',
-    'css_id' => '',
-    'css' => '',
-    'contexts' => array(),
-    'relationships' => array(),
-    'access' => array(
-      'plugins' => array(
-        0 => array(
-          'name' => 'ca_news_list_template',
-          'settings' => array(
-            'ca_news_list_template' => 'ca_news_list_template_five',
-          ),
-          'not' => FALSE,
-        ),
-        1 => array(
-          'name' => 'worx_aurora_base_settings',
-          'settings' => array(
-            'worx_aurora_base_enable' => 'worx_aurora_base_enabled',
-          ),
-          'not' => FALSE,
-        ),
-      ),
-      'logic' => 'and',
-    ),
-  );
-  $display = new panels_display();
-  $display->layout = 'worx_aurora';
-  $display->layout_settings = array();
-  $display->panel_settings = array(
-    'style_settings' => array(
-      'default' => NULL,
-      'middle' => NULL,
-      'left' => NULL,
-      'right' => NULL,
-    ),
-  );
-  $display->cache = array();
-  $display->title = '';
-  $display->uuid = '470e1d32-8137-41d2-9148-7d702d689ce6';
-  $display->content = array();
-  $display->panels = array();
-    $pane = new stdClass();
-    $pane->pid = 'new-57badad2-0b5b-42a9-9cd7-fa81b8f8b8a2';
-    $pane->panel = 'first-first';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'ca_news_lists-ca_news_list_5_main';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array();
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $pane->uuid = '57badad2-0b5b-42a9-9cd7-fa81b8f8b8a2';
-    $display->content['new-57badad2-0b5b-42a9-9cd7-fa81b8f8b8a2'] = $pane;
-    $display->panels['first-first'][0] = 'new-57badad2-0b5b-42a9-9cd7-fa81b8f8b8a2';
-    $pane = new stdClass();
-    $pane->pid = 'new-4c0da5dd-a461-4ad5-b2b4-6d971adabcf4';
-    $pane->panel = 'first-second';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'ca_news_lists-ca_news_list_5_sub';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array();
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $pane->uuid = '4c0da5dd-a461-4ad5-b2b4-6d971adabcf4';
-    $display->content['new-4c0da5dd-a461-4ad5-b2b4-6d971adabcf4'] = $pane;
-    $display->panels['first-second'][0] = 'new-4c0da5dd-a461-4ad5-b2b4-6d971adabcf4';
-  $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-57badad2-0b5b-42a9-9cd7-fa81b8f8b8a2';
-  $handler->conf['display'] = $display;
-  $page->default_handlers[$handler->name] = $handler;
   $pages['ca_news_list_view'] = $page;
 
   $page = new stdClass();
@@ -3337,6 +3337,75 @@ function ca_news_default_page_manager_pages() {
     'context_admin_vocabulary' => 'ca_news_categories',
     'context_admin_vocabulary_options' => 'list',
   );
+  $page->default_handlers[$handler->name] = $handler;
+  $handler = new stdClass();
+  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
+  $handler->api_version = 1;
+  $handler->name = 'page_ca_news_taxonomy_admin__aurora_news_taxonomy_admin';
+  $handler->task = 'page';
+  $handler->subtask = 'ca_news_taxonomy_admin';
+  $handler->handler = 'panel_context';
+  $handler->weight = 1;
+  $handler->conf = array(
+    'title' => 'Aurora News: Taxonomy Admin',
+    'no_blocks' => 0,
+    'pipeline' => 'standard',
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => '',
+    'css_id' => '',
+    'css' => '',
+    'contexts' => array(),
+    'relationships' => array(),
+    'name' => 'aurora_news_taxonomy_admin',
+    'access' => array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'worx_aurora_base_settings',
+          'settings' => array(
+            'worx_aurora_base_enable' => 'worx_aurora_base_enabled',
+          ),
+          'not' => FALSE,
+        ),
+      ),
+      'logic' => 'and',
+    ),
+  );
+  $display = new panels_display();
+  $display->layout = 'worx_aurora';
+  $display->layout_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'center' => NULL,
+    ),
+  );
+  $display->cache = array();
+  $display->title = '';
+  $display->uuid = 'b5014e09-b73b-4097-b76b-d1cfdc8916e9';
+  $display->content = array();
+  $display->panels = array();
+    $pane = new stdClass();
+    $pane->pid = 'new-cff40c37-ac23-417b-b271-1d9126d12fcf';
+    $pane->panel = 'first-first';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'ca_news_taxonomy_admin-ca_blog_taxonomy_admin';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'cff40c37-ac23-417b-b271-1d9126d12fcf';
+    $display->content['new-cff40c37-ac23-417b-b271-1d9126d12fcf'] = $pane;
+    $display->panels['first-first'][0] = 'new-cff40c37-ac23-417b-b271-1d9126d12fcf';
+  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->title_pane = 'new-cff40c37-ac23-417b-b271-1d9126d12fcf';
+  $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
   $pages['ca_news_taxonomy_admin'] = $page;
 
