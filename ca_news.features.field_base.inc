@@ -10,7 +10,7 @@
 function ca_news_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_ca_news_n_categories'
+  // Exported field_base: 'field_ca_news_n_categories'.
   $field_bases['field_ca_news_n_categories'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -36,7 +36,7 @@ function ca_news_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_ca_news_n_image'
+  // Exported field_base: 'field_ca_news_n_image'.
   $field_bases['field_ca_news_n_image'] = array(
     'active' => 1,
     'cardinality' => -1,

@@ -10,7 +10,7 @@
 function ca_news_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-ca_news-body'
+  // Exported field_instance: 'node-ca_news-body'.
   $field_instances['node-ca_news-body'] = array(
     'bundle' => 'ca_news',
     'default_value' => NULL,
@@ -56,7 +56,7 @@ function ca_news_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-ca_news-field_ca_news_n_categories'
+  // Exported field_instance: 'node-ca_news-field_ca_news_n_categories'.
   $field_instances['node-ca_news-field_ca_news_n_categories'] = array(
     'bundle' => 'ca_news',
     'default_value' => NULL,
@@ -96,7 +96,7 @@ function ca_news_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-ca_news-field_ca_news_n_image'
+  // Exported field_instance: 'node-ca_news-field_ca_news_n_image'.
   $field_instances['node-ca_news-field_ca_news_n_image'] = array(
     'bundle' => 'ca_news',
     'deleted' => 0,
@@ -138,19 +138,21 @@ function ca_news_field_default_field_instances() {
       'active' => 1,
       'module' => 'multiupload_imagefield_widget',
       'settings' => array(
-        'manualcrop_crop_info' => TRUE,
-        'manualcrop_default_crop_area' => TRUE,
-        'manualcrop_enable' => FALSE,
-        'manualcrop_inline_crop' => FALSE,
-        'manualcrop_instant_crop' => FALSE,
-        'manualcrop_instant_preview' => TRUE,
-        'manualcrop_keyboard' => TRUE,
-        'manualcrop_maximize_default_crop_area' => FALSE,
+        'manualcrop_crop_info' => 1,
+        'manualcrop_default_crop_area' => 1,
+        'manualcrop_enable' => 1,
+        'manualcrop_inline_crop' => 0,
+        'manualcrop_instant_crop' => 0,
+        'manualcrop_instant_preview' => 1,
+        'manualcrop_keyboard' => 1,
+        'manualcrop_maximize_default_crop_area' => 1,
         'manualcrop_require_cropping' => array(),
-        'manualcrop_styles_list' => array(),
+        'manualcrop_styles_list' => array(
+          'crop_default_landscape' => 'crop_default_landscape',
+        ),
         'manualcrop_styles_mode' => 'include',
-        'manualcrop_thumblist' => FALSE,
-        'preview_image_style' => 'thumbnail',
+        'manualcrop_thumblist' => 0,
+        'preview_image_style' => 'crop_default_landscape_preview',
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_miw',
