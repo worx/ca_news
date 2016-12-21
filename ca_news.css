@@ -18,6 +18,7 @@
 .view-ca-news-lists td,
 .view-display-id-ca_news_block_1 .views-row,
 .view-ca-news-term .views-row,
+.view-ca-news-term td,
 .ca-news-node .block-system-main {
   position: relative;
 }
