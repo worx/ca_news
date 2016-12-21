@@ -69,6 +69,13 @@ function ca_news_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'date_format_news_block_short';
+  $strongarm->value = 'm/d/Y';
+  $export['date_format_news_block_short'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__ca_news';
   $strongarm->value = array(
     'view_modes' => array(),

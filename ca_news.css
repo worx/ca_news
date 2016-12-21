@@ -1,6 +1,5 @@
 /* Node CSS */
  /*Template 1*/
-.ca-news-node-template-1 .pane-ca-news-nodes-ca-news-node-1-a, .ca-news-node-template-1 .pane-ca-news-nodes-ca-news-node-1-b {float: left; padding-right: 10px;}
 .ca-news-node-template-1 .pane-ca-news-nodes-ca-news-node-1-b {clear: left; width: 200px;}
 .ca-news-node-template-1 .pane-ca-news-nodes-ca-news-node-1-b table {margin-bottom: 5px;}
 .ca-news-node-template-1 .pane-ca-news-nodes-ca-news-node-1-b td {padding: 4px 2px;}
@@ -12,15 +11,54 @@
 /* Node Term list */
 .pane-node-field-ca-news-n-categories .field-item {display: inline; margin: 0 5px;}
 
+.view-ca-news-lists .views-row,
+.view-display-id-ca_news_block_1 .views-row,
+.view-ca-news-term .views-row,
+.ca-news-node .block-system-main {
+  position: relative;
+}
+
+.view-display-id-ca_news_block_3 h3 {
+  margin-bottom: 0;
+}
+
+.view-display-id-ca_news_block_3 .views-field views-field-created {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 /* Blocks CSS */
-.view-display-id-ca_news_block_1 .views-field-field-ca-news-n-image, .view-display-id-ca_news_block_4 .views-field-field-ca-news-n-image { float: left; padding-right: 10px; }
 .view-ca-news-blocks td { vertical-align: top; }
 .view-display-id-ca_news_block_3 .views-field-field-ca-news-n-image, .view-display-id-ca_news_block_3 .views-field-title { text-align: center; } 
 .view-display-id-ca_news_block_3 .views-field-body { text-align: justify; }
 .view-ca-news-blocks .views-field-view-node { clear: left; text-align: right; padding-right: 10px; }
 /* Lists CSS */
-.view-ca-news-lists .views-field-field-ca-news-n-image, .view-ca-news-term .views-field-field-ca-news-n-image { float: left; padding-bottom: 5px; padding-right: 10px; }
 .view-ca-news-lists .views-field-view-node, .view-ca-news-term .views-field-view-node { clear: left; text-align: right; padding-right: 10px; }
 .view-ca-news-lists .views-field-nothing, .view-ca-news-term .views-field-nothing { clear: both; }
 .view-id-ca_news_lists td { vertical-align: top; }
 .view-display-id-ca_news_list_4 .col-1, .view-display-id-ca_news_list_4 .col-2 { width: 50%; }
+
+@media only screen and (min-width: 641px) {
+  .ca-news-node-template-1 .pane-ca-news-nodes-ca-news-node-1-a,
+  .ca-news-node-template-1 .pane-ca-news-nodes-ca-news-node-1-b {float: left; padding-right: 10px;}
+
+  .view-display-id-ca_news_block_1 .views-field-field-ca-news-n-image,
+  .view-display-id-ca_news_block_4 .views-field-field-ca-news-n-image { float: left; padding-right: 10px; }
+
+  .view-ca-news-lists .views-field-field-ca-news-n-image,
+  .view-ca-news-term .views-field-field-ca-news-n-image { float: left; padding-bottom: 5px; padding-right: 10px; }
+
+  .view-ca-news-lists .views-field-created,
+  .view-display-id-ca_news_block_1 .views-field-created,
+  .view-ca-news-term .views-field-created {
+    position: absolute;
+    right: 0;
+    top: 10px;
+  }
+
+  .ca-news-node .pane-node-created {
+    position: absolute;
+    right: 0;
+    top: -22px;
+  }
+}

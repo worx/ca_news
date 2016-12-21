@@ -288,6 +288,14 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_type'] = 'h3';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Content: Post date */
+  $handler->display->display_options['fields']['created']['id'] = 'created';
+  $handler->display->display_options['fields']['created']['table'] = 'node';
+  $handler->display->display_options['fields']['created']['field'] = 'created';
+  $handler->display->display_options['fields']['created']['label'] = '';
+  $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['created']['date_format'] = 'medium';
+  $handler->display->display_options['fields']['created']['second_date_format'] = 'long';
   /* Field: Content: Image */
   $handler->display->display_options['fields']['field_ca_news_n_image']['id'] = 'field_ca_news_n_image';
   $handler->display->display_options['fields']['field_ca_news_n_image']['table'] = 'field_data_field_ca_news_n_image';
@@ -392,6 +400,14 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_type'] = 'h3';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Content: Post date */
+  $handler->display->display_options['fields']['created']['id'] = 'created';
+  $handler->display->display_options['fields']['created']['table'] = 'node';
+  $handler->display->display_options['fields']['created']['field'] = 'created';
+  $handler->display->display_options['fields']['created']['label'] = '';
+  $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['created']['date_format'] = 'news_block_short';
+  $handler->display->display_options['fields']['created']['second_date_format'] = 'long';
   /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
@@ -453,6 +469,14 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_type'] = 'strong';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Content: Post date */
+  $handler->display->display_options['fields']['created']['id'] = 'created';
+  $handler->display->display_options['fields']['created']['table'] = 'node';
+  $handler->display->display_options['fields']['created']['field'] = 'created';
+  $handler->display->display_options['fields']['created']['label'] = '';
+  $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['created']['date_format'] = 'news_block_short';
+  $handler->display->display_options['fields']['created']['second_date_format'] = 'long';
   /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
@@ -596,6 +620,14 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_type'] = 'h2';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Content: Post date */
+  $handler->display->display_options['fields']['created']['id'] = 'created';
+  $handler->display->display_options['fields']['created']['table'] = 'node';
+  $handler->display->display_options['fields']['created']['field'] = 'created';
+  $handler->display->display_options['fields']['created']['label'] = '';
+  $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['created']['date_format'] = 'medium';
+  $handler->display->display_options['fields']['created']['second_date_format'] = 'long';
   /* Field: Content: Image */
   $handler->display->display_options['fields']['field_ca_news_n_image']['id'] = 'field_ca_news_n_image';
   $handler->display->display_options['fields']['field_ca_news_n_image']['table'] = 'field_data_field_ca_news_n_image';
@@ -606,7 +638,7 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['field_ca_news_n_image']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_ca_news_n_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_news_n_image']['settings'] = array(
-    'image_style' => 'default',
+    'image_style' => 'crop_default_landscape',
     'image_link' => 'content',
   );
   $handler->display->display_options['fields']['field_ca_news_n_image']['delta_limit'] = '1';
@@ -683,6 +715,14 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_type'] = 'h2';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Content: Post date */
+  $handler->display->display_options['fields']['created']['id'] = 'created';
+  $handler->display->display_options['fields']['created']['table'] = 'node';
+  $handler->display->display_options['fields']['created']['field'] = 'created';
+  $handler->display->display_options['fields']['created']['label'] = '';
+  $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['created']['date_format'] = 'medium';
+  $handler->display->display_options['fields']['created']['second_date_format'] = 'long';
   /* Field: Content: Image */
   $handler->display->display_options['fields']['field_ca_news_n_image']['id'] = 'field_ca_news_n_image';
   $handler->display->display_options['fields']['field_ca_news_n_image']['table'] = 'field_data_field_ca_news_n_image';
@@ -693,7 +733,7 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['field_ca_news_n_image']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_ca_news_n_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_news_n_image']['settings'] = array(
-    'image_style' => 'default',
+    'image_style' => 'crop_default_landscape',
     'image_link' => 'content',
   );
   $handler->display->display_options['fields']['field_ca_news_n_image']['delta_limit'] = '1';
@@ -761,6 +801,14 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_type'] = 'h2';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Content: Post date */
+  $handler->display->display_options['fields']['created']['id'] = 'created';
+  $handler->display->display_options['fields']['created']['table'] = 'node';
+  $handler->display->display_options['fields']['created']['field'] = 'created';
+  $handler->display->display_options['fields']['created']['label'] = '';
+  $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['created']['date_format'] = 'medium';
+  $handler->display->display_options['fields']['created']['second_date_format'] = 'long';
   /* Field: Content: Image */
   $handler->display->display_options['fields']['field_ca_news_n_image']['id'] = 'field_ca_news_n_image';
   $handler->display->display_options['fields']['field_ca_news_n_image']['table'] = 'field_data_field_ca_news_n_image';
@@ -771,7 +819,7 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['field_ca_news_n_image']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_ca_news_n_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_news_n_image']['settings'] = array(
-    'image_style' => 'default',
+    'image_style' => 'crop_default_landscape',
     'image_link' => 'content',
   );
   $handler->display->display_options['fields']['field_ca_news_n_image']['delta_limit'] = '1';
@@ -867,7 +915,7 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['field_ca_news_n_image']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_ca_news_n_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_news_n_image']['settings'] = array(
-    'image_style' => 'default_thumbnail',
+    'image_style' => 'crop_default_landscape_thumbnail',
     'image_link' => 'content',
   );
   $handler->display->display_options['fields']['field_ca_news_n_image']['delta_limit'] = '1';
@@ -904,6 +952,14 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
+  /* Field: Content: Post date */
+  $handler->display->display_options['fields']['created']['id'] = 'created';
+  $handler->display->display_options['fields']['created']['table'] = 'node';
+  $handler->display->display_options['fields']['created']['field'] = 'created';
+  $handler->display->display_options['fields']['created']['label'] = '';
+  $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['created']['date_format'] = 'medium';
+  $handler->display->display_options['fields']['created']['second_date_format'] = 'long';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
@@ -954,6 +1010,14 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_type'] = 'h2';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Content: Post date */
+  $handler->display->display_options['fields']['created']['id'] = 'created';
+  $handler->display->display_options['fields']['created']['table'] = 'node';
+  $handler->display->display_options['fields']['created']['field'] = 'created';
+  $handler->display->display_options['fields']['created']['label'] = '';
+  $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['created']['date_format'] = 'medium';
+  $handler->display->display_options['fields']['created']['second_date_format'] = 'long';
   /* Field: Content: Image */
   $handler->display->display_options['fields']['field_ca_news_n_image']['id'] = 'field_ca_news_n_image';
   $handler->display->display_options['fields']['field_ca_news_n_image']['table'] = 'field_data_field_ca_news_n_image';
@@ -964,7 +1028,7 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['field_ca_news_n_image']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_ca_news_n_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_news_n_image']['settings'] = array(
-    'image_style' => 'default',
+    'image_style' => 'crop_default_landscape',
     'image_link' => 'content',
   );
   $handler->display->display_options['fields']['field_ca_news_n_image']['delta_limit'] = '1';
@@ -1033,6 +1097,14 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_type'] = 'h2';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Content: Post date */
+  $handler->display->display_options['fields']['created']['id'] = 'created';
+  $handler->display->display_options['fields']['created']['table'] = 'node';
+  $handler->display->display_options['fields']['created']['field'] = 'created';
+  $handler->display->display_options['fields']['created']['label'] = '';
+  $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['created']['date_format'] = 'medium';
+  $handler->display->display_options['fields']['created']['second_date_format'] = 'long';
   /* Field: Content: Image */
   $handler->display->display_options['fields']['field_ca_news_n_image']['id'] = 'field_ca_news_n_image';
   $handler->display->display_options['fields']['field_ca_news_n_image']['table'] = 'field_data_field_ca_news_n_image';
@@ -1043,7 +1115,7 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['field_ca_news_n_image']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_ca_news_n_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_news_n_image']['settings'] = array(
-    'image_style' => 'default',
+    'image_style' => 'crop_default_landscape',
     'image_link' => 'content',
   );
   $handler->display->display_options['fields']['field_ca_news_n_image']['delta_limit'] = '1';
@@ -1130,6 +1202,14 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_type'] = 'h2';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Content: Post date */
+  $handler->display->display_options['fields']['created']['id'] = 'created';
+  $handler->display->display_options['fields']['created']['table'] = 'node';
+  $handler->display->display_options['fields']['created']['field'] = 'created';
+  $handler->display->display_options['fields']['created']['label'] = '';
+  $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['created']['date_format'] = 'medium';
+  $handler->display->display_options['fields']['created']['second_date_format'] = 'long';
   /* Field: Content: Image */
   $handler->display->display_options['fields']['field_ca_news_n_image']['id'] = 'field_ca_news_n_image';
   $handler->display->display_options['fields']['field_ca_news_n_image']['table'] = 'field_data_field_ca_news_n_image';
@@ -1140,7 +1220,7 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['field_ca_news_n_image']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_ca_news_n_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_news_n_image']['settings'] = array(
-    'image_style' => 'default_thumbnail',
+    'image_style' => 'crop_default_landscape_thumbnail',
     'image_link' => 'content',
   );
   $handler->display->display_options['fields']['field_ca_news_n_image']['delta_limit'] = '1';
@@ -1336,11 +1416,13 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['field_ca_news_n_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_news_n_image']['type'] = 'colorbox';
   $handler->display->display_options['fields']['field_ca_news_n_image']['settings'] = array(
-    'colorbox_node_style' => 'default',
+    'colorbox_node_style' => 'crop_default_landscape',
+    'colorbox_node_style_first' => '',
     'colorbox_image_style' => '',
     'colorbox_gallery' => 'page',
     'colorbox_gallery_custom' => '',
     'colorbox_caption' => 'auto',
+    'colorbox_caption_custom' => '',
   );
   $handler->display->display_options['fields']['field_ca_news_n_image']['delta_limit'] = '1';
   $handler->display->display_options['fields']['field_ca_news_n_image']['delta_offset'] = '0';
@@ -1458,7 +1540,8 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['field_ca_news_n_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ca_news_n_image']['type'] = 'colorbox';
   $handler->display->display_options['fields']['field_ca_news_n_image']['settings'] = array(
-    'colorbox_node_style' => 'default',
+    'colorbox_node_style' => 'crop_default_landscape',
+    'colorbox_node_style_first' => '',
     'colorbox_image_style' => '',
     'colorbox_gallery' => 'page',
     'colorbox_gallery_custom' => '',
@@ -1735,6 +1818,14 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_type'] = 'h2';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Content: Post date */
+  $handler->display->display_options['fields']['created']['id'] = 'created';
+  $handler->display->display_options['fields']['created']['table'] = 'node';
+  $handler->display->display_options['fields']['created']['field'] = 'created';
+  $handler->display->display_options['fields']['created']['label'] = '';
+  $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['created']['date_format'] = 'medium';
+  $handler->display->display_options['fields']['created']['second_date_format'] = 'long';
   /* Field: Content: Image */
   $handler->display->display_options['fields']['field_ca_news_n_image']['id'] = 'field_ca_news_n_image';
   $handler->display->display_options['fields']['field_ca_news_n_image']['table'] = 'field_data_field_ca_news_n_image';
@@ -1822,6 +1913,14 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_type'] = 'h2';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Content: Post date */
+  $handler->display->display_options['fields']['created']['id'] = 'created';
+  $handler->display->display_options['fields']['created']['table'] = 'node';
+  $handler->display->display_options['fields']['created']['field'] = 'created';
+  $handler->display->display_options['fields']['created']['label'] = '';
+  $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['created']['date_format'] = 'medium';
+  $handler->display->display_options['fields']['created']['second_date_format'] = 'long';
   /* Field: Content: Image */
   $handler->display->display_options['fields']['field_ca_news_n_image']['id'] = 'field_ca_news_n_image';
   $handler->display->display_options['fields']['field_ca_news_n_image']['table'] = 'field_data_field_ca_news_n_image';
@@ -1902,6 +2001,14 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_type'] = 'h2';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Content: Post date */
+  $handler->display->display_options['fields']['created']['id'] = 'created';
+  $handler->display->display_options['fields']['created']['table'] = 'node';
+  $handler->display->display_options['fields']['created']['field'] = 'created';
+  $handler->display->display_options['fields']['created']['label'] = '';
+  $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['created']['date_format'] = 'medium';
+  $handler->display->display_options['fields']['created']['second_date_format'] = 'long';
   /* Field: Content: Image */
   $handler->display->display_options['fields']['field_ca_news_n_image']['id'] = 'field_ca_news_n_image';
   $handler->display->display_options['fields']['field_ca_news_n_image']['table'] = 'field_data_field_ca_news_n_image';
@@ -1992,6 +2099,14 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_type'] = 'h2';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Content: Post date */
+  $handler->display->display_options['fields']['created']['id'] = 'created';
+  $handler->display->display_options['fields']['created']['table'] = 'node';
+  $handler->display->display_options['fields']['created']['field'] = 'created';
+  $handler->display->display_options['fields']['created']['label'] = '';
+  $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['created']['date_format'] = 'medium';
+  $handler->display->display_options['fields']['created']['second_date_format'] = 'long';
   /* Field: Content: Image */
   $handler->display->display_options['fields']['field_ca_news_n_image']['id'] = 'field_ca_news_n_image';
   $handler->display->display_options['fields']['field_ca_news_n_image']['table'] = 'field_data_field_ca_news_n_image';
@@ -2090,6 +2205,14 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_type'] = 'h2';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Content: Post date */
+  $handler->display->display_options['fields']['created']['id'] = 'created';
+  $handler->display->display_options['fields']['created']['table'] = 'node';
+  $handler->display->display_options['fields']['created']['field'] = 'created';
+  $handler->display->display_options['fields']['created']['label'] = '';
+  $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['created']['date_format'] = 'medium';
+  $handler->display->display_options['fields']['created']['second_date_format'] = 'long';
   /* Field: Content: Image */
   $handler->display->display_options['fields']['field_ca_news_n_image']['id'] = 'field_ca_news_n_image';
   $handler->display->display_options['fields']['field_ca_news_n_image']['table'] = 'field_data_field_ca_news_n_image';
@@ -2169,6 +2292,14 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_type'] = 'h2';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Content: Post date */
+  $handler->display->display_options['fields']['created']['id'] = 'created';
+  $handler->display->display_options['fields']['created']['table'] = 'node';
+  $handler->display->display_options['fields']['created']['field'] = 'created';
+  $handler->display->display_options['fields']['created']['label'] = '';
+  $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['created']['date_format'] = 'medium';
+  $handler->display->display_options['fields']['created']['second_date_format'] = 'long';
   /* Field: Content: Image */
   $handler->display->display_options['fields']['field_ca_news_n_image']['id'] = 'field_ca_news_n_image';
   $handler->display->display_options['fields']['field_ca_news_n_image']['table'] = 'field_data_field_ca_news_n_image';
@@ -2259,6 +2390,14 @@ function ca_news_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_type'] = 'h2';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Content: Post date */
+  $handler->display->display_options['fields']['created']['id'] = 'created';
+  $handler->display->display_options['fields']['created']['table'] = 'node';
+  $handler->display->display_options['fields']['created']['field'] = 'created';
+  $handler->display->display_options['fields']['created']['label'] = '';
+  $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['created']['date_format'] = 'medium';
+  $handler->display->display_options['fields']['created']['second_date_format'] = 'long';
   /* Field: Content: Image */
   $handler->display->display_options['fields']['field_ca_news_n_image']['id'] = 'field_ca_news_n_image';
   $handler->display->display_options['fields']['field_ca_news_n_image']['table'] = 'field_data_field_ca_news_n_image';
