@@ -27,6 +27,12 @@ function ca_news_install() {
 
   // Enable the taxonomy/term/%taxonomy_term page without creating a conflict with other features that the page enabled as well.
   variable_set('page_manager_term_view_disabled', '0');
+  
+  $vocab = taxonomy_vocabulary_machine_name_load('ca_news_categories');
+  $vocabvid = $vocab->vid;
+  
+  $editterm = 'edit terms in ' . $vocabvid;
+  $deleteterm = 'delete terms in ' . $vocabvid;
 
   // Set the permissions for News Admin
   user_role_change_permissions(227698236, 
@@ -35,10 +41,10 @@ function ca_news_install() {
 						'create ca_news content' => TRUE,
 						'delete any ca_news content' => TRUE,
 						'delete own ca_news content' => TRUE,
-						'delete terms in ca_news_categories' => TRUE,
 						'edit any ca_news content' => TRUE,
 						'edit own ca_news content' => TRUE,
-						'edit terms in ca_news_categories' => TRUE,
+      $editterm => TRUE,
+      $deleteterm => TRUE,
     )
   );
 
@@ -49,10 +55,12 @@ function ca_news_install() {
 						'create ca_news content' => TRUE,
 						'delete any ca_news content' => TRUE,
 						'delete own ca_news content' => TRUE,
-						'delete terms in ca_news_categories' => TRUE,
+      $editterm => TRUE,
+      $deleteterm => TRUE,
 						'edit any ca_news content' => TRUE,
 						'edit own ca_news content' => TRUE,
-						'edit terms in ca_news_categories' => TRUE,
+      $editterm => TRUE,
+      $deleteterm => TRUE,
     )
   );
 
@@ -63,10 +71,10 @@ function ca_news_install() {
 						'create ca_news content' => TRUE,
 						'delete any ca_news content' => TRUE,
 						'delete own ca_news content' => TRUE,
-						'delete terms in ca_news_categories' => TRUE,
 						'edit any ca_news content' => TRUE,
 						'edit own ca_news content' => TRUE,
-						'edit terms in ca_news_categories' => TRUE,
+      $editterm => TRUE,
+      $deleteterm => TRUE,
     )
   );
 }
@@ -76,6 +84,12 @@ function ca_news_install() {
  * given these permissions without overridding the feature.
  */
 function ca_news_update_7001() {
+  $vocab = taxonomy_vocabulary_machine_name_load('ca_news_categories');
+  $vocabvid = $vocab->vid;
+
+  $editterm = 'edit terms in ' . $vocabvid;
+  $deleteterm = 'delete terms in ' . $vocabvid;
+		
     // Set the permissions for News Admin
   user_role_change_permissions(227698236, 
     array(
@@ -83,10 +97,10 @@ function ca_news_update_7001() {
 						'create ca_news content' => TRUE,
 						'delete any ca_news content' => TRUE,
 						'delete own ca_news content' => TRUE,
-						'delete terms in ca_news_categories' => TRUE,
 						'edit any ca_news content' => TRUE,
 						'edit own ca_news content' => TRUE,
-						'edit terms in ca_news_categories' => TRUE,
+      $editterm => TRUE,
+      $deleteterm => TRUE,
     )
   );
 
@@ -97,10 +111,10 @@ function ca_news_update_7001() {
 						'create ca_news content' => TRUE,
 						'delete any ca_news content' => TRUE,
 						'delete own ca_news content' => TRUE,
-						'delete terms in ca_news_categories' => TRUE,
 						'edit any ca_news content' => TRUE,
 						'edit own ca_news content' => TRUE,
-						'edit terms in ca_news_categories' => TRUE,
+      $editterm => TRUE,
+      $deleteterm => TRUE,
     )
   );
 
@@ -111,10 +125,10 @@ function ca_news_update_7001() {
 						'create ca_news content' => TRUE,
 						'delete any ca_news content' => TRUE,
 						'delete own ca_news content' => TRUE,
-						'delete terms in ca_news_categories' => TRUE,
 						'edit any ca_news content' => TRUE,
 						'edit own ca_news content' => TRUE,
-						'edit terms in ca_news_categories' => TRUE,
+      $editterm => TRUE,
+      $deleteterm => TRUE,
     )
   );
 }
