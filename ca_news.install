@@ -27,24 +27,11 @@ function ca_news_install() {
 
   // Enable the taxonomy/term/%taxonomy_term page without creating a conflict with other features that the page enabled as well.
   variable_set('page_manager_term_view_disabled', '0');
-  
-  $vocab = taxonomy_vocabulary_machine_name_load('ca_news_categories');
-  $vocabvid = $vocab->vid;
-  
-  $editterm = 'edit terms in ' . $vocabvid;
-  $deleteterm = 'delete terms in ' . $vocabvid;
 
   // Set the permissions for News Admin
   user_role_change_permissions(227698236, 
     array(
       'administer taxonomy' => TRUE,
-						'create ca_news content' => TRUE,
-						'delete any ca_news content' => TRUE,
-						'delete own ca_news content' => TRUE,
-						'edit any ca_news content' => TRUE,
-						'edit own ca_news content' => TRUE,
-      $editterm => TRUE,
-      $deleteterm => TRUE,
     )
   );
 
@@ -52,15 +39,6 @@ function ca_news_install() {
   user_role_change_permissions(3, 
     array(
       'administer taxonomy' => TRUE,
-						'create ca_news content' => TRUE,
-						'delete any ca_news content' => TRUE,
-						'delete own ca_news content' => TRUE,
-      $editterm => TRUE,
-      $deleteterm => TRUE,
-						'edit any ca_news content' => TRUE,
-						'edit own ca_news content' => TRUE,
-      $editterm => TRUE,
-      $deleteterm => TRUE,
     )
   );
 
@@ -68,13 +46,6 @@ function ca_news_install() {
   user_role_change_permissions(4, 
     array(
       'administer taxonomy' => TRUE,
-						'create ca_news content' => TRUE,
-						'delete any ca_news content' => TRUE,
-						'delete own ca_news content' => TRUE,
-						'edit any ca_news content' => TRUE,
-						'edit own ca_news content' => TRUE,
-      $editterm => TRUE,
-      $deleteterm => TRUE,
     )
   );
 }
@@ -94,13 +65,6 @@ function ca_news_update_7001() {
   user_role_change_permissions(227698236, 
     array(
       'administer taxonomy' => TRUE,
-						'create ca_news content' => TRUE,
-						'delete any ca_news content' => TRUE,
-						'delete own ca_news content' => TRUE,
-						'edit any ca_news content' => TRUE,
-						'edit own ca_news content' => TRUE,
-      $editterm => TRUE,
-      $deleteterm => TRUE,
     )
   );
 
@@ -108,13 +72,6 @@ function ca_news_update_7001() {
   user_role_change_permissions(3, 
     array(
       'administer taxonomy' => TRUE,
-						'create ca_news content' => TRUE,
-						'delete any ca_news content' => TRUE,
-						'delete own ca_news content' => TRUE,
-						'edit any ca_news content' => TRUE,
-						'edit own ca_news content' => TRUE,
-      $editterm => TRUE,
-      $deleteterm => TRUE,
     )
   );
 
@@ -122,13 +79,6 @@ function ca_news_update_7001() {
   user_role_change_permissions(4, 
     array(
       'administer taxonomy' => TRUE,
-						'create ca_news content' => TRUE,
-						'delete any ca_news content' => TRUE,
-						'delete own ca_news content' => TRUE,
-						'edit any ca_news content' => TRUE,
-						'edit own ca_news content' => TRUE,
-      $editterm => TRUE,
-      $deleteterm => TRUE,
     )
   );
 }
