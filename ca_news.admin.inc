@@ -54,7 +54,8 @@ function ca_news_settings_form() {
       'ca_news_term_display_all' => t('Display Everywhere'),
     ),
     '#required' => TRUE,
-    '#default_value' => variable_get('ca_news_term_display', 'ca_news_term_display_false'),
+    '#description' => t('Where do you want term information to display, Node only will display the terms to allow a user to see like minded news, Everywhere will also inlcude a filter on the list.')
+    '#default_value' => variable_get('ca_news_term_display', 'ca_news_term_display_node'),
   );
   $form['ca_news_list_template'] = array(
     '#type' => 'select',
@@ -86,8 +87,8 @@ function ca_news_settings_form() {
       'ca_news_term_template_one' => t('Template one'),
       'ca_news_term_template_two' => t('Template two'),
       'ca_news_term_template_three' => t('Template three'),
-      'ca_news_term_template_four' => t('Template two'),
-      'ca_news_term_template_five' => t('Template three'),
+      'ca_news_term_template_four' => t('Template four'),
+      'ca_news_term_template_five' => t('Template five'),
     ),
     '#required' => TRUE,
     '#default_value' => variable_get('ca_news_term_template', 'ca_news_term_template_one'),
