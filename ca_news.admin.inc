@@ -54,7 +54,7 @@ function ca_news_settings_form() {
       'ca_news_term_display_all' => t('Display Everywhere'),
     ),
     '#required' => TRUE,
-    '#description' => t('Where do you want term information to display, Node only will display the terms to allow a user to see like minded news, Everywhere will also inlcude a filter on the list.')
+    '#description' => t('Where do you want term information to display, Node only will display the terms to allow a user to see like minded news, Everywhere will also inlcude a filter on the list.'),
     '#default_value' => variable_get('ca_news_term_display', 'ca_news_term_display_node'),
   );
   $form['ca_news_list_template'] = array(
